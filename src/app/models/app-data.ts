@@ -77,7 +77,6 @@ export interface AboutData {
   subtitle: string;
   greeting: string;
   paragraph1: string;
-  paragraph2: string;
   tags: string[];
   skillCategories: SkillCategory[];
 }

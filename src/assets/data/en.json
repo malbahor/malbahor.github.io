@@ -23,7 +23,7 @@
     "toggleAria": "Open navigation menu",
     "closeAria": "Close navigation menu",
     "navItems": [
-      { "label": "Home", "href": "#hero" },
+      { "label": "Home", "href": "#home" },
       { "label": "About", "href": "#about" },
       { "label": "Experience", "href": "#experience" },
       { "label": "Projects", "href": "#projects" },
@@ -54,7 +54,6 @@
     "subtitle": "Angular, TypeScript and RxJS applied to finance and insurance, boosted with AI-driven development",
     "greeting": "👋 Hello, I'm Manuel Alba Hornillo",
     "paragraph1": "Senior Frontend Engineer focused on scalable web architecture for demanding sectors such as finance and insurance. Specialized in Angular, TypeScript and RxJS, integrating Artificial Intelligence tools to accelerate development, optimize code quality and create robust interfaces.",
-    "paragraph2": "I apply AI-driven development to optimize code, architectures and workflows, always aiming for clean, maintainable and well-tested solutions.",
     "tags": ["#Angular", "#TypeScript", "#RxJS", "#CleanArchitecture"],
     "skillCategories": [
       {
@@ -94,7 +93,7 @@
   "experience": {
     "eyebrow": "Career",
     "title": "Work Experience",
-    "subtitle": "4+ years delivering frontend solutions in enterprise environments",
+    "subtitle": "5+ years delivering frontend solutions in enterprise environments",
     "currentBadge": "Current",
     "experiences": [
       {
@@ -106,7 +105,6 @@
         "isCurrent": true,
         "description": "Frontend architecture and development leadership with Angular for enterprise financial applications.",
         "achievements": [
-          "Leadership of frontend architecture and development with Angular in enterprise financial applications.",
           "Technical reference for the frontend team and coordination of requirements with backend and client.",
           "Management and integration of automated deployment pipelines with Jenkins (CI/CD).",
           "Unit test coverage with Jest and integration of REST APIs backed by MongoDB."
@@ -122,7 +120,6 @@
         "isCurrent": false,
         "description": "Development of responsive web interfaces with Angular and Ionic for Public Administration, Finance and Transport.",
         "achievements": [
-          "Development, optimization and refactoring of responsive web interfaces with Angular and Ionic for Public Administration, Finance and Transport sectors.",
           "Creation and maintenance of the centralized reusable UI component library documented with Storybook.",
           "Full-stack support in backend development and maintenance using Java and MySQL."
         ],
