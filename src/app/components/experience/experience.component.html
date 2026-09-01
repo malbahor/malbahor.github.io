@@ -1,0 +1,66 @@
+<section id="experience" class="py-24 bg-slate-950 relative border-t border-slate-900">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+      <span class="text-cyan-400 text-xs font-bold uppercase tracking-widest">{{ data().experience.eyebrow }}</span>
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-white">{{ data().experience.title }}</h2>
+      <p class="text-slate-400 text-sm sm:text-base">{{ data().experience.subtitle }}</p>
+    </div>
+
+    <div class="max-w-4xl mx-auto relative pl-6 sm:pl-8 border-l border-slate-800 space-y-12">
+      @for (exp of data().experience.experiences; track exp.id) {
+        <div class="relative group">
+          <div
+            class="absolute -left-[31px] sm:-left-[39px] top-1.5 w-4 h-4 rounded-full border-2 transition-transform duration-300 group-hover:scale-125"
+            [class.border-cyan-400]="exp.isCurrent"
+            [class.bg-cyan-500]="exp.isCurrent"
+            [class.shadow-lg]="exp.isCurrent"
+            [class.shadow-md]="!exp.isCurrent"
+            [class.border-slate-600]="!exp.isCurrent"
+            [class.bg-slate-900]="!exp.isCurrent"
+          ></div>
+
+          <div class="bg-slate-900/60 border border-slate-800/90 rounded-2xl p-6 sm:p-8 backdrop-blur-md group-hover:border-cyan-500/40 transition-all shadow-xl">
+            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-4">
+              <div>
+                <h3 class="text-xl font-bold text-white group-hover:text-cyan-300 transition-colors">
+                  {{ exp.role }}
+                </h3>
+                <div class="text-sm font-semibold text-cyan-400 flex items-center gap-2 mt-0.5">
+                  <span>{{ exp.company }}</span>
+                  @if (exp.isCurrent) {
+                    <span class="px-2 py-0.5 text-[10px] rounded bg-cyan-950 text-cyan-300 border border-cyan-500/40 uppercase tracking-wide">
+                      {{ data().experience.currentBadge }}
+                    </span>
+                  }
+                </div>
+              </div>
+
+              <span class="inline-flex items-center px-3 py-1 rounded-full bg-slate-950 border border-slate-800 text-slate-400 text-xs font-mono">
+                📅 {{ exp.period }} · 📍 {{ exp.location }}
+              </span>
+            </div>
+
+            <p class="text-slate-300 text-sm mb-4 leading-relaxed">{{ exp.description }}</p>
+
+            <ul class="space-y-2 mb-6 text-xs sm:text-sm text-slate-300">
+              @for (item of exp.achievements; track item) {
+                <li class="flex items-start gap-2">
+                  <span class="text-cyan-400 font-bold mt-0.5">▹</span>
+                  <span>{{ item }}</span>
+                </li>
+              }
+            </ul>
+
+            <div class="flex flex-wrap gap-2 pt-4 border-t border-slate-800/70">
+              @for (tech of exp.technologies; track tech) {
+                <span class="px-2.5 py-1 rounded-lg bg-slate-950/80 border border-slate-800 text-slate-300 text-xs font-mono">
+                  {{ tech }}
+                </span>
+              }
+            </div>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>

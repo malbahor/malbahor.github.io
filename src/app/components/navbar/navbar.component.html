@@ -1,0 +1,127 @@
+<header class="sticky top-0 z-50 w-full backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80 transition-all duration-300">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16">
+      <a href="#hero" class="flex items-center gap-2 group">
+        <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-cyan-500 to-blue-600 flex items-center justify-center text-white font-extrabold text-lg shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-transform duration-300">
+          M
+        </div>
+        <div class="flex flex-col">
+          <span class="font-bold text-lg bg-gradient-to-r from-slate-100 via-slate-200 to-slate-400 bg-clip-text text-transparent group-hover:from-cyan-400 group-hover:to-blue-400 transition-all">
+            Malbahor
+          </span>
+          <span class="text-[10px] text-cyan-400 tracking-wider font-semibold uppercase -mt-1">
+            {{ data().navbar.brandTagline }}
+          </span>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex items-center space-x-1 lg:space-x-2">
+        @for (item of data().navbar.navItems; track item.href) {
+          <a
+            [href]="item.href"
+            class="px-3.5 py-2 rounded-lg text-sm font-medium text-slate-300 hover:text-cyan-400 hover:bg-slate-900/60 transition-all duration-200"
+          >
+            {{ item.label }}
+          </a>
+        }
+      </nav>
+
+      <div class="hidden md:flex items-center gap-3">
+        <div class="flex items-center gap-1 rounded-lg bg-slate-900 border border-slate-800 p-0.5">
+          <button
+            type="button"
+            (click)="setLanguage('en')"
+            [class.bg-slate-800]="language() === 'en'"
+            [class.text-cyan-400]="language() === 'en'"
+            class="px-2.5 py-1 rounded-md text-xs font-bold text-slate-400 hover:text-white transition-colors"
+          >
+            EN
+          </button>
+          <button
+            type="button"
+            (click)="setLanguage('es')"
+            [class.bg-slate-800]="language() === 'es'"
+            [class.text-cyan-400]="language() === 'es'"
+            class="px-2.5 py-1 rounded-md text-xs font-bold text-slate-400 hover:text-white transition-colors"
+          >
+            ES
+          </button>
+        </div>
+        <a
+          href="#contact"
+          class="relative inline-flex items-center justify-center p-0.5 overflow-hidden text-xs font-semibold rounded-xl group bg-gradient-to-br from-cyan-500 to-blue-600 text-white shadow-md shadow-cyan-500/10 hover:shadow-cyan-500/25 transition-all"
+        >
+          <span class="relative px-4 py-2 rounded-[10px] bg-slate-950 group-hover:bg-opacity-0 flex items-center gap-2">
+            <span>{{ data().navbar.cta }}</span>
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </span>
+        </a>
+      </div>
+
+      <div class="flex md:hidden items-center gap-2">
+        <div class="flex items-center gap-1 rounded-lg bg-slate-900 border border-slate-800 p-0.5">
+          <button
+            type="button"
+            (click)="setLanguage('en')"
+            [class.bg-slate-800]="language() === 'en'"
+            [class.text-cyan-400]="language() === 'en'"
+            class="px-2 py-1 rounded-md text-xs font-bold text-slate-400 transition-colors"
+          >
+            EN
+          </button>
+          <button
+            type="button"
+            (click)="setLanguage('es')"
+            [class.bg-slate-800]="language() === 'es'"
+            [class.text-cyan-400]="language() === 'es'"
+            class="px-2 py-1 rounded-md text-xs font-bold text-slate-400 transition-colors"
+          >
+            ES
+          </button>
+        </div>
+        <button
+          type="button"
+          (click)="toggleMenu()"
+          class="inline-flex items-center justify-center p-2 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-cyan-500"
+          [attr.aria-expanded]="isMenuOpen()"
+          [attr.aria-label]="isMenuOpen() ? data().navbar.closeAria : data().navbar.toggleAria"
+        >
+          @if (!isMenuOpen()) {
+            <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          } @else {
+            <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          }
+        </button>
+      </div>
+    </div>
+  </div>
+
+  @if (isMenuOpen()) {
+    <div class="md:hidden border-b border-slate-800 bg-slate-950/95 backdrop-blur-lg px-4 pt-2 pb-4 space-y-1">
+      @for (item of data().navbar.navItems; track item.href) {
+        <a
+          [href]="item.href"
+          (click)="closeMenu()"
+          class="block px-3 py-2.5 rounded-lg text-base font-medium text-slate-300 hover:text-cyan-400 hover:bg-slate-900 transition-colors"
+        >
+          {{ item.label }}
+        </a>
+      }
+      <div class="pt-3">
+        <a
+          href="#contact"
+          (click)="closeMenu()"
+          class="block w-full text-center py-2.5 px-4 rounded-xl font-semibold text-white bg-gradient-to-r from-cyan-500 to-blue-600 shadow-md shadow-cyan-500/20"
+        >
+          {{ data().navbar.cta }}
+        </a>
+      </div>
+    </div>
+  }
+</header>

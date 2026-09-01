@@ -1,0 +1,196 @@
+{
+  "profile": {
+    "name": "Manuel Alba Hornillo",
+    "title": "Senior Frontend Engineer",
+    "location": "Seville, Spain",
+    "email": "mahx007@gmail.com",
+    "phone": "+34 662 919 002",
+    "linkedin": "https://linkedin.com/in/manuel-alba-hornillo",
+    "summary": "Senior Frontend Engineer focused on scalable web architecture for demanding sectors such as finance and insurance. Specialized in Angular, TypeScript and RxJS, integrating Artificial Intelligence tools to accelerate development, optimize code quality and build robust interfaces."
+  },
+  "education": {
+    "title": "Education & Languages",
+    "certifications": [{ "name": "Official Angular Certification (Level 2)", "url": "https://interstate21.com/certificate/?code=5E09LYX" }],
+    "degrees": [{ "name": "Higher Degree in Web Application Development", "institution": "ADA ITS Seville", "period": "2018 - 2020" }],
+    "languages": [
+      { "name": "Spanish", "level": "Native" },
+      { "name": "English", "level": "B2 - Professional proficiency" }
+    ]
+  },
+  "navbar": {
+    "brandTagline": "Senior Frontend Engineer",
+    "cta": "Contact",
+    "toggleAria": "Open navigation menu",
+    "closeAria": "Close navigation menu",
+    "navItems": [
+      { "label": "Home", "href": "#hero" },
+      { "label": "About", "href": "#about" },
+      { "label": "Experience", "href": "#experience" },
+      { "label": "Projects", "href": "#projects" },
+      { "label": "Contact", "href": "#contact" }
+    ]
+  },
+  "hero": {
+    "statusPrefix": "Senior Frontend Engineer @ ",
+    "statusCompany": "NTT DATA",
+    "titleLine1": "Manuel Alba Hornillo,",
+    "titleHighlight": "Senior Frontend",
+    "titleLine2": "Engineer.",
+    "description": "Senior Frontend Engineer focused on scalable web architecture for demanding sectors such as finance and insurance. Specialized in Angular, TypeScript and RxJS, integrating Artificial Intelligence tools to accelerate development, optimize code quality and build robust interfaces.",
+    "ctaProjects": "View Projects",
+    "ctaContact": "Contact Me",
+    "techLabel": "Tech Core:",
+    "techBadges": ["Angular", "TypeScript", "RxJS"],
+    "stats": [
+      { "label": "Years of Experience", "value": "5+" },
+      { "label": "Current Company", "value": "NTT DATA" },
+      { "label": "Sectors", "value": "Finance & Insurance" },
+      { "label": "Based in", "value": "Seville, ES" }
+    ]
+  },
+  "about": {
+    "eyebrow": "About Me",
+    "title": "Scalable frontend architecture for demanding sectors",
+    "subtitle": "Angular, TypeScript and RxJS applied to finance and insurance, boosted with AI-driven development",
+    "greeting": "👋 Hello, I'm Manuel Alba Hornillo",
+    "paragraph1": "Senior Frontend Engineer focused on scalable web architecture for demanding sectors such as finance and insurance. Specialized in Angular, TypeScript and RxJS, integrating Artificial Intelligence tools to accelerate development, optimize code quality and create robust interfaces.",
+    "paragraph2": "I apply AI-driven development to optimize code, architectures and workflows, always aiming for clean, maintainable and well-tested solutions.",
+    "tags": ["#Angular", "#TypeScript", "#RxJS", "#CleanArchitecture"],
+    "skillCategories": [
+      {
+        "title": "Frontend",
+        "skills": [
+          { "name": "Angular", "level": "Expert", "icon": "🅰️" },
+          { "name": "TypeScript", "level": "Expert", "icon": "🔷" },
+          { "name": "HTML5 & CSS/SCSS", "level": "Expert", "icon": "🎨" },
+          { "name": "RxJS", "level": "Advanced", "icon": "🔁" },
+          { "name": "Tailwind CSS", "level": "Advanced", "icon": "🌊" },
+          { "name": "JavaScript", "level": "Expert", "icon": "🟨" },
+          { "name": "Ionic", "level": "Advanced", "icon": "📱" },
+          { "name": "Storybook", "level": "Advanced", "icon": "📚" }
+        ]
+      },
+      {
+        "title": "Testing & DevOps",
+        "skills": [
+          { "name": "Git & Bitbucket", "level": "Expert", "icon": "🔀" },
+          { "name": "Jest", "level": "Advanced", "icon": "🧪" },
+          { "name": "Jenkins & CI/CD", "level": "Advanced", "icon": "🚀" },
+          { "name": "Azure DevOps", "level": "Intermediate", "icon": "☁️" },
+          { "name": "Jasmine & Karma", "level": "Advanced", "icon": "⚙️" }
+        ]
+      },
+      {
+        "title": "Backend & DB",
+        "skills": [
+          { "name": "REST APIs & Postman", "level": "Advanced", "icon": "🔌" },
+          { "name": "Java", "level": "Intermediate", "icon": "☕" },
+          { "name": "MySQL", "level": "Intermediate", "icon": "🐬" },
+          { "name": "MongoDB", "level": "Intermediate", "icon": "🍃" }
+        ]
+      }
+    ]
+  },
+  "experience": {
+    "eyebrow": "Career",
+    "title": "Work Experience",
+    "subtitle": "4+ years delivering frontend solutions in enterprise environments",
+    "currentBadge": "Current",
+    "experiences": [
+      {
+        "id": "ntt-data",
+        "role": "Senior Frontend Engineer",
+        "company": "NTT DATA",
+        "period": "07/2024 - Present",
+        "location": "Seville, Spain",
+        "isCurrent": true,
+        "description": "Frontend architecture and development leadership with Angular for enterprise financial applications.",
+        "achievements": [
+          "Leadership of frontend architecture and development with Angular in enterprise financial applications.",
+          "Technical reference for the frontend team and coordination of requirements with backend and client.",
+          "Management and integration of automated deployment pipelines with Jenkins (CI/CD).",
+          "Unit test coverage with Jest and integration of REST APIs backed by MongoDB."
+        ],
+        "technologies": ["Angular", "TypeScript", "RxJS", "Jenkins", "Jest", "MongoDB"]
+      },
+      {
+        "id": "deloitte",
+        "role": "Frontend Developer",
+        "company": "Deloitte",
+        "period": "09/2020 - 06/2024",
+        "location": "Seville, Spain",
+        "isCurrent": false,
+        "description": "Development of responsive web interfaces with Angular and Ionic for Public Administration, Finance and Transport.",
+        "achievements": [
+          "Development, optimization and refactoring of responsive web interfaces with Angular and Ionic for Public Administration, Finance and Transport sectors.",
+          "Creation and maintenance of the centralized reusable UI component library documented with Storybook.",
+          "Full-stack support in backend development and maintenance using Java and MySQL."
+        ],
+        "technologies": ["Angular", "Ionic", "Storybook", "SCSS", "Java", "MySQL"]
+      }
+    ]
+  },
+  "projects": {
+    "eyebrow": "Portfolio",
+    "title": "Professional Work Areas",
+    "subtitle": "Real areas of work developed throughout my career in enterprise environments",
+    "featuredLabel": "★ Featured",
+    "projectTypeLabel": "Enterprise Project / Internal",
+    "projects": [
+      {
+        "id": "financial-architecture",
+        "title": "Enterprise Financial App Architecture",
+        "category": "NTT DATA",
+        "description": "Frontend architecture for enterprise financial applications: scalable module design, complex REST API integration backed by MongoDB, CI/CD with Jenkins and unit testing with Jest.",
+        "tags": ["Angular", "TypeScript", "RxJS", "Jenkins", "Jest"],
+        "demoUrl": "",
+        "githubUrl": "",
+        "featured": true
+      },
+      {
+        "id": "design-system-storybook",
+        "title": "Design System & Storybook UI Library",
+        "category": "Deloitte",
+        "description": "Centralized library of reusable UI components documented with Storybook, applied to responsive web and mobile products with Angular and Ionic.",
+        "tags": ["Angular", "Ionic", "Storybook", "SCSS", "Tailwind"],
+        "demoUrl": "",
+        "githubUrl": "",
+        "featured": true
+      },
+      {
+        "id": "public-sector-transport",
+        "title": "Public Sector & Transport Web Solutions",
+        "category": "Deloitte",
+        "description": "Development, optimization and refactoring of responsive web interfaces for Public Administration and Transport, with full-stack support in Java, MySQL and REST APIs.",
+        "tags": ["Angular", "REST APIs", "Java", "MySQL"],
+        "demoUrl": "",
+        "githubUrl": "",
+        "featured": false
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Let's talk about your next project",
+    "subtitle": "Open to new opportunities in frontend architecture and Angular development",
+    "infoTitle": "Contact Information",
+    "infoIntro": "You can reach me through any of these channels:",
+    "location": "Seville, Spain",
+    "formTitle": "Send me a message",
+    "successMsg": "Message sent successfully! I will get back to you soon.",
+    "nameLabel": "Full Name",
+    "namePlaceholder": "Your name",
+    "emailLabel": "Email Address",
+    "emailPlaceholder": "you@email.com",
+    "subjectLabel": "Subject",
+    "subjectPlaceholder": "e.g. Frontend project opportunity",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Write your message here...",
+    "submitLabel": "Send Message",
+    "socialLinks": [
+      { "name": "LinkedIn", "url": "https://linkedin.com/in/manuel-alba-hornillo", "handle": "in/manuel-alba-hornillo", "icon": "linkedin" },
+      { "name": "Email", "url": "mailto:mahx007@gmail.com", "handle": "mahx007@gmail.com", "icon": "email" },
+      { "name": "Phone", "url": "tel:+34662919002", "handle": "+34 662 919 002", "icon": "phone" }
+    ]
+  }
+}
