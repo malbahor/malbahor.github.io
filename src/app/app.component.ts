@@ -6,6 +6,7 @@ import { AboutComponent } from './components/about/about.component';
 import { ExperienceComponent } from './components/experience/experience.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { ScrollTopComponent } from './components/scroll-top/scroll-top.component';
 
 @Component({
   selector: 'app-root',
@@ -16,7 +17,8 @@ import { ContactComponent } from './components/contact/contact.component';
     AboutComponent,
     ExperienceComponent,
     ProjectsComponent,
-    ContactComponent
+    ContactComponent,
+    ScrollTopComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'

@@ -23,7 +23,7 @@
     "toggleAria": "Open navigation menu",
     "closeAria": "Close navigation menu",
     "navItems": [
-      { "label": "Home", "href": "#hero" },
+      { "label": "Home", "href": "#home" },
       { "label": "About", "href": "#about" },
       { "label": "Experience", "href": "#experience" },
       { "label": "Projects", "href": "#projects" },
@@ -94,7 +94,7 @@
   "experience": {
     "eyebrow": "Career",
     "title": "Work Experience",
-    "subtitle": "4+ years delivering frontend solutions in enterprise environments",
+    "subtitle": "5+ years delivering frontend solutions in enterprise environments",
     "currentBadge": "Current",
     "experiences": [
       {

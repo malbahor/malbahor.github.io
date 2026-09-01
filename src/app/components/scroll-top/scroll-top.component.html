@@ -1,0 +1,15 @@
+<button
+  type="button"
+  (click)="scrollToTop()"
+  aria-label="Scroll to top"
+  class="md:hidden fixed bottom-5 right-5 z-50 flex h-11 w-11 items-center justify-center rounded-full bg-gradient-to-tr from-cyan-500 to-blue-600 text-white shadow-lg shadow-cyan-500/30 backdrop-blur-sm border border-white/10 active:scale-90 transition-all duration-300"
+  [class.opacity-100]="isVisible()"
+  [class.scale-100]="isVisible()"
+  [class.opacity-0]="!isVisible()"
+  [class.scale-75]="!isVisible()"
+  [class.pointer-events-none]="!isVisible()"
+>
+  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 15l7-7 7 7" />
+  </svg>
+</button>

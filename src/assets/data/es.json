@@ -23,7 +23,7 @@
     "toggleAria": "Abrir menú de navegación",
     "closeAria": "Cerrar menú de navegación",
     "navItems": [
-      { "label": "Inicio", "href": "#hero" },
+      { "label": "Inicio", "href": "#home" },
       { "label": "Sobre mí", "href": "#about" },
       { "label": "Experiencia", "href": "#experience" },
       { "label": "Proyectos", "href": "#projects" },
@@ -94,7 +94,7 @@
   "experience": {
     "eyebrow": "Trayectoria",
     "title": "Experiencia Laboral",
-    "subtitle": "Más de 4 años entregando soluciones frontend en entornos empresariales",
+    "subtitle": "Más de 5 años entregando soluciones frontend en entornos empresariales",
     "currentBadge": "Actual",
     "experiences": [
       {
