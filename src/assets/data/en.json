@@ -41,6 +41,15 @@
     "ctaContact": "Contact Me",
     "techLabel": "Tech Core:",
     "techBadges": ["Angular", "TypeScript", "RxJS"],
+    "resumeCta": "Download Resume / CV",
+    "usRemoteBadge": "Open to US Remote | CET / EST-PST Overlap",
+    "resumeModal": {
+      "title": "Download Resume",
+      "subtitle": "Choose the version that fits your region:",
+      "enOption": "English Resume (US / Global)",
+      "esOption": "Curriculum en Español",
+      "closeAria": "Close dialog"
+    },
     "stats": [
       { "label": "Years of Experience", "value": "5+" },
       { "label": "Current Company", "value": "NTT DATA" },

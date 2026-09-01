@@ -68,6 +68,15 @@ export interface HeroData {
   ctaContact: string;
   techLabel: string;
   techBadges: string[];
+  resumeCta: string;
+  usRemoteBadge: string;
+  resumeModal: {
+    title: string;
+    subtitle: string;
+    enOption: string;
+    esOption: string;
+    closeAria: string;
+  };
   stats: Stat[];
 }
 

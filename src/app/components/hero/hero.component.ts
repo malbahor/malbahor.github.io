@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener, signal } from '@angular/core';
 import { useTranslation } from '../../services/translation.service';
 
 @Component({
@@ -9,5 +9,19 @@ import { useTranslation } from '../../services/translation.service';
 })
 export class HeroComponent {
   readonly data = useTranslation().data;
+  readonly isResumeModalOpen = signal(false);
+
+  openResumeModal() {
+    this.isResumeModalOpen.set(true);
+  }
+
+  closeResumeModal() {
+    this.isResumeModalOpen.set(false);
+  }
+
+  @HostListener('document:keydown.escape')
+  onEscape() {
+    this.closeResumeModal();
+  }
 }
 
