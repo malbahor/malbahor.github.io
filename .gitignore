@@ -44,5 +44,6 @@ Thumbs.db
 # Local & tooling
 .clinerules
 *.log
-build.log
+*_log.txt
+pup_install.txt
 .clinic/
