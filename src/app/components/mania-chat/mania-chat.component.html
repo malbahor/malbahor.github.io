@@ -1,0 +1,124 @@
+<button
+  type="button"
+  (click)="toggle()"
+  [attr.aria-label]="isOpenLabel"
+  class="fixed bottom-5 left-5 z-50 flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-tr from-cyan-500 to-blue-600 text-white shadow-lg shadow-cyan-500/30 border border-white/10 hover:shadow-cyan-500/50 hover:scale-110 active:scale-95 transition-all duration-300"
+>
+  @if (!isOpen()) {
+    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+    </svg>
+  } @else {
+    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+    </svg>
+  }
+</button>
+
+@if (isOpen()) {
+  <section
+    class="fixed bottom-20 left-5 z-50 w-[calc(100vw-2.5rem)] max-w-sm rounded-2xl border border-slate-800 bg-slate-950/95 backdrop-blur-xl shadow-2xl shadow-black/40 flex flex-col overflow-hidden"
+    role="dialog"
+    aria-label="ManIA"
+  >
+    <header class="flex items-center justify-between gap-3 border-b border-slate-800 bg-slate-900/60 px-4 py-3">
+      <div class="flex items-center gap-3">
+        <div class="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-tr from-cyan-500 to-blue-600 text-white text-sm font-extrabold shadow-md shadow-cyan-500/25">M</div>
+        <div class="leading-tight">
+          <h2 class="text-sm font-bold text-white">{{ data().mania.widgetTitle }}</h2>
+          <p class="text-[11px] text-slate-400">{{ data().mania.widgetSubtitle }}</p>
+        </div>
+      </div>
+      <button
+        type="button"
+        class="hold-btn text-slate-400 hover:text-white transition-colors"
+        [class.is-holding]="isHolding()"
+        [class.is-done]="isResetDone()"
+        (mousedown)="startHold()"
+        (mouseup)="cancelHold()"
+        (mouseleave)="cancelHold()"
+        (touchstart)="startHold()"
+        (touchend)="cancelHold()"
+        (touchcancel)="cancelHold()"
+        (contextmenu)="$event.preventDefault()"
+        aria-label="Hold to clear conversation"
+      >
+        @if (showHoldHint()) {
+          <span class="hold-hint">{{ language() === 'es' ? 'Mantén pulsado para reiniciar' : 'Hold to reset' }}</span>
+        }
+        @if (isHolding()) {
+          <span class="hold-label">{{ language() === 'es' ? 'Reiniciando chat...' : 'Resetting chat...' }}</span>
+        }
+        <span class="hold-icon">
+          <svg class="hold-trash w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+          </svg>
+          <svg class="hold-ring" viewBox="0 0 36 36" aria-hidden="true">
+            <circle class="ring-track" cx="18" cy="18" r="16" pathLength="100" />
+            <circle class="ring-progress" cx="18" cy="18" r="16" pathLength="100" />
+          </svg>
+        </span>
+      </button>
+    </header>
+
+    <div #messagesContainer class="messages-scroll flex-1 space-y-3 overflow-y-auto p-4 min-h-[16rem] max-h-[60vh]" aria-live="polite">
+      @if (!hasMessages()) {
+        <div class="flex gap-2.5">
+          <div class="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-gradient-to-tr from-cyan-500 to-blue-600 text-white text-[11px] font-extrabold">M</div>
+          <p class="max-w-[85%] rounded-xl rounded-tl-sm bg-slate-900/70 px-3.5 py-2.5 text-[13px] leading-relaxed text-slate-300">
+            {{ data().mania.greeting }}
+          </p>
+        </div>
+      }
+
+      @for (message of messages(); track $index) {
+        <div class="flex gap-2.5" [class.flex-row-reverse]="message.role === 'user'">
+          @if (message.role === 'assistant') {
+            <div class="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-gradient-to-tr from-cyan-500 to-blue-600 text-white text-[11px] font-extrabold">M</div>
+          }
+          <p
+            [class]="message.role === 'assistant'
+              ? 'max-w-[85%] rounded-xl rounded-tl-sm bg-slate-900/70 px-3.5 py-2.5 text-[13px] leading-relaxed text-slate-300'
+              : 'max-w-[85%] rounded-xl rounded-tr-sm bg-cyan-500/15 border border-cyan-500/20 px-3.5 py-2.5 text-[13px] leading-relaxed text-slate-100'"
+          >
+            {{ message.content }}
+          </p>
+        </div>
+      }
+
+      @if (isLoading()) {
+        <div class="flex gap-2.5">
+          <div class="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-gradient-to-tr from-cyan-500 to-blue-600 text-white text-[11px] font-extrabold">M</div>
+          <p class="max-w-[85%] rounded-xl rounded-tl-sm bg-slate-900/70 px-3.5 py-2.5 text-[13px] text-slate-400">{{ data().mania.loadingLabel }}</p>
+        </div>
+      }
+
+      @if (hasError()) {
+        <p class="text-xs text-rose-400">{{ data().mania.unexpectedError }}</p>
+      }
+    </div>
+
+    <footer class="border-t border-slate-800 bg-slate-900/40 p-3">
+      <form class="flex items-center gap-2" (ngSubmit)="send()">
+        <input
+          name="message"
+          type="text"
+          [(ngModel)]="draft"
+          [placeholder]="data().mania.messagePlaceholder"
+          [attr.aria-label]="data().mania.messagePlaceholder"
+          class="flex-1 rounded-lg border border-slate-800 bg-slate-950 px-3 py-2 text-sm text-slate-100 placeholder-slate-500 focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 transition-all"
+        />
+        <button
+          type="submit"
+          [disabled]="isInputEmpty() || isLoading()"
+          [attr.aria-label]="data().mania.sendAria"
+          class="inline-flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-to-tr from-cyan-500 to-blue-600 text-white shadow-md shadow-cyan-500/25 hover:from-cyan-400 active:scale-95 transition-all disabled:opacity-40 disabled:cursor-not-allowed"
+        >
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+          </svg>
+        </button>
+      </form>
+    </footer>
+  </section>
+}

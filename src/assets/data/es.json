@@ -205,5 +205,18 @@
       { "name": "Email", "url": "mailto:mahx007@gmail.com", "handle": "mahx007@gmail.com", "icon": "email" },
       { "name": "Teléfono", "url": "tel:+34662919002", "handle": "+34 662 919 002", "icon": "phone" }
     ]
+  },
+  "mania": {
+    "fabAria": "Abrir asistente ManIA",
+    "closeAria": "Cerrar asistente ManIA",
+    "widgetTitle": "ManIA",
+    "widgetSubtitle": "Asistente de trayectoria profesional",
+    "greeting": "¡Hola! Soy ManIA, el asistente virtual de Manuel Alba. Puedo contarte sobre su experiencia profesional, stack técnico y formación en ingeniería. ¿En qué puedo ayudarte?",
+    "messagePlaceholder": "Pregunta sobre la experiencia de Manuel...",
+    "sendAria": "Enviar mensaje",
+    "sendLabel": "Enviar",
+    "loadingLabel": "ManIA está pensando...",
+    "unexpectedError": "No pude procesar tu solicitud. Inténtalo de nuevo.",
+    "introduction": "Soy ManIA, el asistente de trayectoria profesional de Manuel Alba. Pregúntame sobre su experiencia, stack técnico, formación y logros en ingeniería."
   }
 }
