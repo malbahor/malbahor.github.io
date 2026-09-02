@@ -116,6 +116,13 @@ export interface ContactData {
   location: string;
   formTitle: string;
   successMsg: string;
+  errorMsg: string;
+  sendingLabel: string;
+  nameRequired: string;
+  emailRequired: string;
+  emailInvalid: string;
+  subjectRequired: string;
+  messageRequired: string;
   nameLabel: string;
   namePlaceholder: string;
   emailLabel: string;
