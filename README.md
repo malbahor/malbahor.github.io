@@ -1,59 +1,95 @@
-# PortfolioMalbahor
+<div align="center">
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.27.
+# Portfolio — Manuel Alba Hornillo
 
-## Development server
+**Senior Frontend Engineer Portfolio**
 
-To start a local development server, run:
+A high-performance Angular application showcasing professional experience, featured projects, and a working contact form — crafted with modern Angular architecture and a data-driven, i18n-first approach.
 
-```bash
-ng serve
-```
+</div>
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+---
 
-## Code scaffolding
+## 🚀 Project Overview
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+A modern single-page application built with **Angular 19** that balances clean architecture with tangible performance. The codebase leverages **Standalone Components** and **Signals** for fine-grained reactivity and predictable state, while **RxJS** powers asynchronous flows. All content lives in **per-locale JSON files** (EN/ES) consumed through a dedicated `TranslationService`, keeping components lean and fully data-driven.
 
-```bash
-ng generate component component-name
-```
+---
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## 🧰 Tech Stack
 
-```bash
-ng generate --help
-```
+| Area | Technology |
+| ---- | ---------- |
+| **Language** | TypeScript (strict mode) |
+| **Framework** | Angular 19+ (Standalone Components, Signals, RxJS) |
+| **Styling** | Tailwind CSS 4 |
+| **Unit Testing** | Jest + jest-preset-angular |
+| **Contact Form** | Formspree (HTTP API) |
+| **Internationalization** | Custom i18n service (EN / ES) |
+| **CI/CD** | GitHub Actions → GitHub Pages |
 
-## Building
+---
 
-To build the project run:
+## ✨ Key Features
 
-```bash
-ng build
-```
+- **Responsive Design** — mobile-first layout across all breakpoints.
+- **High Test Coverage** — **100% statements, branches, functions, and lines** with Jest.
+- **Dynamic Language Switcher** — instant EN/ES toggle with persisted preference.
+- **Accessible UI/UX** — semantic markup, keyboard-friendly navigation, and ARIA labels.
+- **Fast Loading Times** — optimized bundles, SSR/prerendering enabled, lazy-friendly architecture.
+- **Real Contact Form** — validated client-side and submitted to Formspree with loading/error/success feedback.
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+---
 
-## Running unit tests
+## 🚦 Getting Started & Local Development
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
+Clone the repository and install dependencies:
 
 ```bash
-ng e2e
+git clone https://github.com/malbahor/malbahor.github.io.git
+cd portfolio-malbahor
+npm install
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+Run the development server:
 
-## Additional Resources
+```bash
+npm start
+```
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Open `http://localhost:4200/` — the app auto-reloads on source changes.
+
+Run the test suite **with coverage report**:
+
+```bash
+npm run test:coverage
+```
+
+---
+
+## 🧪 Testing & Quality
+
+Unit tests are executed with **Jest** and `jest-preset-angular`, running in a Node-based jsdom environment (no browser required). A **100% unit test coverage target is achieved**, enforced across components, services, and logic:
+
+```bash
+npm test            # Run tests once
+npm run test:coverage  # Run tests and print coverage table
+```
+
+---
+
+## 🌍 Deployment
+
+Deployment is **automated via CI/CD**. Pushing to the `main` branch triggers the `deploy.yml` workflow, which:
+
+1. Checks out the repository with Node.js 20.
+2. Installs dependencies with `npm ci`.
+3. Builds the production bundle.
+4. Uploads `dist/portfolio-malbahor/browser` as a GitHub Pages artifact.
+5. Deploys to GitHub Pages automatically.
+
+---
+
+## 📄 License
+
+MIT
