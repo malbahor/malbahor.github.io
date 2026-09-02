@@ -1,0 +1,2690 @@
+
+> portfolio-malbahor@0.0.0 build
+> ng build
+
+[33m❯[39m Building...
+[32m✔[39m Building...
+[35mPrerendered 0 static routes.[39m
+Application bundle generation failed. [2.802 seconds]
+
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'isOnTopic' does not exist on type 'ManiaChatService'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:74:14:
+[37m      74 │     if (!this.[32misOnTopic[37m(normalizedQuery)) {
+         ╵               [32m~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'getOffTopicResponse' does not exist on type 'ManiaChatService'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:75:18:
+[37m      75 │       return this.[32mgetOffTopicResponse[37m(lang);
+         ╵                   [32m~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'simulateClientSideResponse' does not exist on type 'ManiaChatService'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:82:16:
+[37m      82 │     return this.[32msimulateClientSideResponse[37m(normalizedQuery, lang);
+         ╵                 [32m~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1005: ';' expected.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:185:11:
+[37m      185 │         ? `[32mPuedes[37m contactar a Manuel Alba en:\n📧 Email: ${data...
+          ╵            [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Puedes'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:185:11:
+[37m      185 │         ? `[32mPuedes[37m contactar a Manuel Alba en:\n📧 Email: ${data...
+          ╵            [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:185:18:
+[37m      185 │         ? `Puedes [32mcontactar[37m a Manuel Alba en:\n📧 Email: ${data...
+          ╵                   [32m~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'contactar'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:185:18:
+[37m      185 │         ? `Puedes [32mcontactar[37m a Manuel Alba en:\n📧 Email: ${data...
+          ╵                   [32m~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:185:28:
+[37m      185 │         ? `Puedes contactar [32ma[37m Manuel Alba en:\n📧 Email: ${data...
+          ╵                             [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'a'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:185:28:
+[37m      185 │         ? `Puedes contactar [32ma[37m Manuel Alba en:\n📧 Email: ${data...
+          ╵                             [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:185:30:
+[37m      185 │         ? `Puedes contactar a [32mManuel[37m Alba en:\n📧 Email: ${data...
+          ╵                               [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Manuel'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:185:30:
+[37m      185 │         ? `Puedes contactar a [32mManuel[37m Alba en:\n📧 Email: ${data...
+          ╵                               [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:185:37:
+[37m      185 │ ...? `Puedes contactar a Manuel [32mAlba[37m en:\n📧 Email: ${data.cont...
+          ╵                                 [32m~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Alba'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:185:37:
+[37m      185 │ ...? `Puedes contactar a Manuel [32mAlba[37m en:\n📧 Email: ${data.cont...
+          ╵                                 [32m~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1127: Invalid character.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:185:45:
+[37m      185 │ ...des contactar a Manuel Alba en:[32m[37m\n📧 Email: ${data.contact.em...
+          ╵                                   [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'n'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:185:46:
+[37m      185 │ ...es contactar a Manuel Alba en:\[32mn[37m📧 Email: ${data.contact.ema...
+          ╵                                   [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1127: Invalid character.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:185:47:
+[37m      185 │ ... contactar a Manuel Alba en:\n[32m�[37m�� Email: ${data.contact.email...
+          ╵                                  [32m~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:185:57:
+[37m      185 │ ...r a Manuel Alba en:\n📧 Email[32m:[37m ${data.contact.email}\n📱 T...
+          ╵                                [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2592: Cannot find name '$'. Do you need to install type definitions for jQuery? Try `npm i --save-dev @types/jquery` and then add 'jquery' to the types field in your tsconfig.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:185:57:
+[37m      185 │ ...r a Manuel Alba en:\n📧 Email[32m:[37m ${data.contact.email}\n📱 T...
+          ╵                                [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1127: Invalid character.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:185:78:
+[37m      185 │ ...📧 Email: ${data.contact.emai[32m[37ml}\n📱 Teléfono: ${data.cont...
+          ╵                                [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'n'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:185:79:
+[37m      185 │ ...��� Email: ${data.contact.email[32m}[37m\n📱 Teléfono: ${data.conta...
+          ╵                                   [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1127: Invalid character.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:185:80:
+[37m      185 │ ...� Email: ${data.contact.email}[32m\n[37m📱 Teléfono: ${data.contact...
+          ╵                                  [32m~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:185:93:
+[37m      185 │ ...ata.contact.email}\n📱 Teléf[32mo[37mno: ${data.contact.phone}\n�...
+          ╵                               [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2592: Cannot find name '$'. Do you need to install type definitions for jQuery? Try `npm i --save-dev @types/jquery` and then add 'jquery' to the types field in your tsconfig.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:185:93:
+[37m      185 │ ...ata.contact.email}\n📱 Teléf[32mo[37mno: ${data.contact.phone}\n�...
+          ╵                               [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1127: Invalid character.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:185:114:
+[37m      185 │ ...��� Teléfono: ${data.contact.p[32m[37mhone}\n🔗 LinkedIn: ${data.co...
+          ╵                                  [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'n'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:185:115:
+[37m      185 │ ...�� Teléfono: ${data.contact.ph[32mo[37mne}\n🔗 LinkedIn: ${data.con...
+          ╵                                  [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1127: Invalid character.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:185:116:
+[37m      185 │ ... Teléfono: ${data.contact.pho[32mne[37m}\n🔗 LinkedIn: ${data.conta...
+          ╵                                 [32m~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:185:129:
+[37m      185 │ ...${data.contact.phone}\n🔗 Lin[32mk[37medIn: ${data.contact.linkedin}...
+          ╵                                [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2592: Cannot find name '$'. Do you need to install type definitions for jQuery? Try `npm i --save-dev @types/jquery` and then add 'jquery' to the types field in your tsconfig.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:185:129:
+[37m      185 │ ...${data.contact.phone}\n🔗 Lin[32mk[37medIn: ${data.contact.linkedin}...
+          ╵                                [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1127: Invalid character.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:185:153:
+[37m      185 │ ...��� LinkedIn: ${data.contact.li[32m[37mnkedin}\n📍 Ubicación: ${dat...
+          ╵                                   [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'n'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:185:154:
+[37m      185 │ ...�� LinkedIn: ${data.contact.lin[32mk[37medin}\n📍 Ubicación: ${data...
+          ╵                                   [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1127: Invalid character.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:185:155:
+[37m      185 │ ... LinkedIn: ${data.contact.link[32med[37min}\n📍 Ubicación: ${data.c...
+          ╵                                  [32m~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:185:169:
+[37m      185 │ ...data.contact.linkedin}\n📍 Ub[32mi[37mcación: ${data.contact.locati...
+          ╵                                [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2592: Cannot find name '$'. Do you need to install type definitions for jQuery? Try `npm i --save-dev @types/jquery` and then add 'jquery' to the types field in your tsconfig.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:185:169:
+[37m      185 │ ...data.contact.linkedin}\n📍 Ub[32mi[37mcación: ${data.contact.locati...
+          ╵                                [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1005: ';' expected.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:186:11:
+[37m      186 │         : `[32mYou[37m can reach Manuel Alba at:\n📧 Email: ${data.cont...
+          ╵            [32m~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'You'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:186:11:
+[37m      186 │         : `[32mYou[37m can reach Manuel Alba at:\n📧 Email: ${data.cont...
+          ╵            [32m~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:186:15:
+[37m      186 │         : `You [32mcan[37m reach Manuel Alba at:\n📧 Email: ${data.cont...
+          ╵                [32m~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'can'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:186:15:
+[37m      186 │         : `You [32mcan[37m reach Manuel Alba at:\n📧 Email: ${data.cont...
+          ╵                [32m~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:186:19:
+[37m      186 │         : `You can [32mreach[37m Manuel Alba at:\n📧 Email: ${data.cont...
+          ╵                    [32m~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'reach'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:186:19:
+[37m      186 │         : `You can [32mreach[37m Manuel Alba at:\n📧 Email: ${data.cont...
+          ╵                    [32m~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:186:25:
+[37m      186 │         : `You can reach [32mManuel[37m Alba at:\n📧 Email: ${data.cont...
+          ╵                          [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Manuel'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:186:25:
+[37m      186 │         : `You can reach [32mManuel[37m Alba at:\n📧 Email: ${data.cont...
+          ╵                          [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:186:32:
+[37m      186 │         : `You can reach Manuel [32mAlba[37m at:\n📧 Email: ${data.cont...
+          ╵                                 [32m~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Alba'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:186:32:
+[37m      186 │         : `You can reach Manuel [32mAlba[37m at:\n📧 Email: ${data.cont...
+          ╵                                 [32m~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1127: Invalid character.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:186:40:
+[37m      186 │ ... `You can reach Manuel Alba at:[32m[37m\n📧 Email: ${data.contact.em...
+          ╵                                   [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'n'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:186:41:
+[37m      186 │ ...`You can reach Manuel Alba at:\[32mn[37m📧 Email: ${data.contact.ema...
+          ╵                                   [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1127: Invalid character.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:186:42:
+[37m      186 │ ...ou can reach Manuel Alba at:\n[32m�[37m�� Email: ${data.contact.email...
+          ╵                                  [32m~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:186:52:
+[37m      186 │ ...ach Manuel Alba at:\n📧 Email[32m:[37m ${data.contact.email}\n📱 P...
+          ╵                                [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2592: Cannot find name '$'. Do you need to install type definitions for jQuery? Try `npm i --save-dev @types/jquery` and then add 'jquery' to the types field in your tsconfig.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:186:52:
+[37m      186 │ ...ach Manuel Alba at:\n📧 Email[32m:[37m ${data.contact.email}\n📱 P...
+          ╵                                [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1127: Invalid character.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:186:73:
+[37m      186 │ ...📧 Email: ${data.contact.emai[32m[37ml}\n📱 Phone: ${data.contact....
+          ╵                                [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'n'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:186:74:
+[37m      186 │ ...��� Email: ${data.contact.email[32m}[37m\n📱 Phone: ${data.contact.p...
+          ╵                                   [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1127: Invalid character.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:186:75:
+[37m      186 │ ...� Email: ${data.contact.email}[32m\n[37m📱 Phone: ${data.contact.pho...
+          ╵                                  [32m~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:186:85:
+[37m      186 │ ...${data.contact.email}\n📱 Pho[32mn[37me: ${data.contact.phone}\n🔗...
+          ╵                                [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2592: Cannot find name '$'. Do you need to install type definitions for jQuery? Try `npm i --save-dev @types/jquery` and then add 'jquery' to the types field in your tsconfig.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:186:85:
+[37m      186 │ ...${data.contact.email}\n📱 Pho[32mn[37me: ${data.contact.phone}\n🔗...
+          ╵                                [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1127: Invalid character.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:186:106:
+[37m      186 │ ...\n📱 Phone: ${data.contact.ph[32m[37mone}\n🔗 LinkedIn: ${data.con...
+          ╵                                [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'n'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:186:107:
+[37m      186 │ ...n📱 Phone: ${data.contact.pho[32mn[37me}\n🔗 LinkedIn: ${data.cont...
+          ╵                                [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1127: Invalid character.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:186:108:
+[37m      186 │ ...��� Phone: ${data.contact.phon[32me}[37m\n🔗 LinkedIn: ${data.contac...
+          ╵                                  [32m~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:186:121:
+[37m      186 │ ...{data.contact.phone}\n🔗 Link[32me[37mdIn: ${data.contact.linkedin}\...
+          ╵                                [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2592: Cannot find name '$'. Do you need to install type definitions for jQuery? Try `npm i --save-dev @types/jquery` and then add 'jquery' to the types field in your tsconfig.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:186:121:
+[37m      186 │ ...{data.contact.phone}\n🔗 Link[32me[37mdIn: ${data.contact.linkedin}\...
+          ╵                                [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1127: Invalid character.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:186:145:
+[37m      186 │ ...�� LinkedIn: ${data.contact.lin[32m[37mkedin}\n📍 Location: ${data.c...
+          ╵                                   [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'n'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:186:146:
+[37m      186 │ ...� LinkedIn: ${data.contact.link[32me[37mdin}\n📍 Location: ${data.co...
+          ╵                                   [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1127: Invalid character.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:186:147:
+[37m      186 │ ...LinkedIn: ${data.contact.linke[32mdi[37mn}\n📍 Location: ${data.cont...
+          ╵                                  [32m~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:186:160:
+[37m      186 │ ...data.contact.linkedin}\n📍 Lo[32mc[37mation: ${data.contact.location}`;
+          ╵                                [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2592: Cannot find name '$'. Do you need to install type definitions for jQuery? Try `npm i --save-dev @types/jquery` and then add 'jquery' to the types field in your tsconfig.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:186:160:
+[37m      186 │ ...data.contact.linkedin}\n📍 Lo[32mc[37mation: ${data.contact.location}`;
+          ╵                                [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1005: ';' expected.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:192:11:
+[37m      192 │         ? `[32mManuel[37m Alba tiene un ${edu.degree} por ${edu.instituti...
+          ╵            [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Manuel'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:192:11:
+[37m      192 │         ? `[32mManuel[37m Alba tiene un ${edu.degree} por ${edu.instituti...
+          ╵            [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:192:18:
+[37m      192 │         ? `Manuel [32mAlba[37m tiene un ${edu.degree} por ${edu.instituti...
+          ╵                   [32m~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Alba'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:192:18:
+[37m      192 │         ? `Manuel [32mAlba[37m tiene un ${edu.degree} por ${edu.instituti...
+          ╵                   [32m~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:192:23:
+[37m      192 │         ? `Manuel Alba [32mtiene[37m un ${edu.degree} por ${edu.instituti...
+          ╵                        [32m~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'tiene'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:192:23:
+[37m      192 │         ? `Manuel Alba [32mtiene[37m un ${edu.degree} por ${edu.instituti...
+          ╵                        [32m~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:192:29:
+[37m      192 │         ? `Manuel Alba tiene [32mun[37m ${edu.degree} por ${edu.instituti...
+          ╵                              [32m~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'un'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:192:29:
+[37m      192 │         ? `Manuel Alba tiene [32mun[37m ${edu.degree} por ${edu.instituti...
+          ╵                              [32m~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:192:32:
+[37m      192 │         ? `Manuel Alba tiene un [32m$[37m{edu.degree} por ${edu.instituti...
+          ╵                                 [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2592: Cannot find name '$'. Do you need to install type definitions for jQuery? Try `npm i --save-dev @types/jquery` and then add 'jquery' to the types field in your tsconfig.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:192:32:
+[37m      192 │         ? `Manuel Alba tiene un [32m$[37m{edu.degree} por ${edu.instituti...
+          ╵                                 [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'edu'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:192:34:
+[37m      192 │ ...    ? `Manuel Alba tiene un ${[32medu[37m.degree} por ${edu.institutio...
+          ╵                                  [32m~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:192:46:
+[37m      192 │ ...l Alba tiene un ${edu.degree} [32mpor[37m ${edu.institution} (${edu.pe...
+          ╵                                  [32m~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'por'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:192:46:
+[37m      192 │ ...l Alba tiene un ${edu.degree} [32mpor[37m ${edu.institution} (${edu.pe...
+          ╵                                  [32m~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:192:50:
+[37m      192 │ ...lba tiene un ${edu.degree} por [32m$[37m{edu.institution} (${edu.perio...
+          ╵                                   [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2592: Cannot find name '$'. Do you need to install type definitions for jQuery? Try `npm i --save-dev @types/jquery` and then add 'jquery' to the types field in your tsconfig.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:192:50:
+[37m      192 │ ...lba tiene un ${edu.degree} por [32m$[37m{edu.institution} (${edu.perio...
+          ╵                                   [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'edu'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:192:52:
+[37m      192 │ ... tiene un ${edu.degree} por ${[32medu[37m.institution} (${edu.period})...
+          ╵                                  [32m~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2592: Cannot find name '$'. Do you need to install type definitions for jQuery? Try `npm i --save-dev @types/jquery` and then add 'jquery' to the types field in your tsconfig.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:192:70:
+[37m      192 │ ...egree} por ${edu.institution} ([32m$[37m{edu.period}). Además, cuenta...
+          ╵                                   [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1005: ')' expected.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:192:71:
+[37m      192 │ ...gree} por ${edu.institution} ($[32m{[37medu.period}). Además, cuenta ...
+          ╵                                   [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'edu'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:192:72:
+[37m      192 │ ...ee} por ${edu.institution} (${[32medu[37m.period}). Además, cuenta co...
+          ╵                                  [32m~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1128: Declaration or statement expected.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:192:83:
+[37m      192 │ ...edu.institution} (${edu.period}[32m)[37m. Además, cuenta con la ${dat...
+          ╵                                   [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1128: Declaration or statement expected.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:192:84:
+[37m      192 │ ...du.institution} (${edu.period})[32m.[37m Además, cuenta con la ${data...
+          ╵                                   [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Además'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:192:86:
+[37m      192 │ ...stitution} (${edu.period}). [32mAdemá[37ms, cuenta con la ${data.cert...
+          ╵                                [32m~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2695: Left side of comma operator is unused and has no side effects.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:192:86:
+[37m      192 │ ...stitution} (${edu.period}). [32mAdemá[37ms, cuenta con la ${data.cert...
+          ╵                                [32m~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'cuenta'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:192:94:
+[37m      192 │ ...n} (${edu.period}). Además,[32m cuent[37ma con la ${data.certificatio...
+          ╵                               [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1005: ';' expected.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:192:101:
+[37m      192 │ ...{edu.period}). Además, cuenta[32m co[37mn la ${data.certifications[0]...
+          ╵                                 [32m~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'con'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:192:101:
+[37m      192 │ ...{edu.period}). Además, cuenta[32m co[37mn la ${data.certifications[0]...
+          ╵                                 [32m~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:192:105:
+[37m      192 │ ....period}). Además, cuenta con[32m l[37ma ${data.certifications[0].nam...
+          ╵                                 [32m~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'la'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:192:105:
+[37m      192 │ ....period}). Además, cuenta con[32m l[37ma ${data.certifications[0].nam...
+          ╵                                 [32m~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:192:108:
+[37m      192 │ ...period}). Además, cuenta con la[32m [37m${data.certifications[0].name}.`
+          ╵                                   [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2592: Cannot find name '$'. Do you need to install type definitions for jQuery? Try `npm i --save-dev @types/jquery` and then add 'jquery' to the types field in your tsconfig.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:192:108:
+[37m      192 │ ...period}). Además, cuenta con la[32m [37m${data.certifications[0].name}.`
+          ╵                                   [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1128: Declaration or statement expected.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:192:138:
+[37m      192 │ ...period}). Además, cuenta con la ${data.certifications[0].name[32m}[37m.`
+          ╵                                                                 [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1005: ';' expected.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:193:11:
+[37m      193 │         : `[32mManuel[37m Alba holds a ${edu.degree} from ${edu.instituti...
+          ╵            [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Manuel'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:193:11:
+[37m      193 │         : `[32mManuel[37m Alba holds a ${edu.degree} from ${edu.instituti...
+          ╵            [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:193:18:
+[37m      193 │         : `Manuel [32mAlba[37m holds a ${edu.degree} from ${edu.instituti...
+          ╵                   [32m~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Alba'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:193:18:
+[37m      193 │         : `Manuel [32mAlba[37m holds a ${edu.degree} from ${edu.instituti...
+          ╵                   [32m~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:193:23:
+[37m      193 │         : `Manuel Alba [32mholds[37m a ${edu.degree} from ${edu.instituti...
+          ╵                        [32m~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'holds'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:193:23:
+[37m      193 │         : `Manuel Alba [32mholds[37m a ${edu.degree} from ${edu.instituti...
+          ╵                        [32m~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:193:29:
+[37m      193 │         : `Manuel Alba holds [32ma[37m ${edu.degree} from ${edu.instituti...
+          ╵                              [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'a'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:193:29:
+[37m      193 │         : `Manuel Alba holds [32ma[37m ${edu.degree} from ${edu.instituti...
+          ╵                              [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:193:31:
+[37m      193 │         : `Manuel Alba holds a [32m$[37m{edu.degree} from ${edu.instituti...
+          ╵                                [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2592: Cannot find name '$'. Do you need to install type definitions for jQuery? Try `npm i --save-dev @types/jquery` and then add 'jquery' to the types field in your tsconfig.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:193:31:
+[37m      193 │         : `Manuel Alba holds a [32m$[37m{edu.degree} from ${edu.instituti...
+          ╵                                [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'edu'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:193:33:
+[37m      193 │         : `Manuel Alba holds a ${[32medu[37m.degree} from ${edu.instituti...
+          ╵                                  [32m~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:193:45:
+[37m      193 │ ...l Alba holds a ${edu.degree} [32mfrom[37m ${edu.institution} (${edu.pe...
+          ╵                                 [32m~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'from'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:193:45:
+[37m      193 │ ...l Alba holds a ${edu.degree} [32mfrom[37m ${edu.institution} (${edu.pe...
+          ╵                                 [32m~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:193:50:
+[37m      193 │ ...lba holds a ${edu.degree} from [32m$[37m{edu.institution} (${edu.perio...
+          ╵                                   [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2592: Cannot find name '$'. Do you need to install type definitions for jQuery? Try `npm i --save-dev @types/jquery` and then add 'jquery' to the types field in your tsconfig.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:193:50:
+[37m      193 │ ...lba holds a ${edu.degree} from [32m$[37m{edu.institution} (${edu.perio...
+          ╵                                   [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'edu'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:193:52:
+[37m      193 │ ... holds a ${edu.degree} from ${[32medu[37m.institution} (${edu.period})...
+          ╵                                  [32m~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2592: Cannot find name '$'. Do you need to install type definitions for jQuery? Try `npm i --save-dev @types/jquery` and then add 'jquery' to the types field in your tsconfig.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:193:70:
+[37m      193 │ ...gree} from ${edu.institution} ([32m$[37m{edu.period}). He also has the...
+          ╵                                   [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1005: ')' expected.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:193:71:
+[37m      193 │ ...ree} from ${edu.institution} ($[32m{[37medu.period}). He also has the ...
+          ╵                                   [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'edu'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:193:72:
+[37m      193 │ ...e} from ${edu.institution} (${[32medu[37m.period}). He also has the ${...
+          ╵                                  [32m~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1128: Declaration or statement expected.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:193:83:
+[37m      193 │ ...edu.institution} (${edu.period}[32m)[37m. He also has the ${data.certi...
+          ╵                                   [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1128: Declaration or statement expected.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:193:84:
+[37m      193 │ ...du.institution} (${edu.period})[32m.[37m He also has the ${data.certif...
+          ╵                                   [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:193:86:
+[37m      193 │ ...institution} (${edu.period}). [32mHe[37m also has the ${data.certifica...
+          ╵                                  [32m~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'He'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:193:86:
+[37m      193 │ ...institution} (${edu.period}). [32mHe[37m also has the ${data.certifica...
+          ╵                                  [32m~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:193:89:
+[37m      193 │ ...itution} (${edu.period}). He [32malso[37m has the ${data.certification...
+          ╵                                 [32m~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'also'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:193:89:
+[37m      193 │ ...itution} (${edu.period}). He [32malso[37m has the ${data.certification...
+          ╵                                 [32m~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:193:94:
+[37m      193 │ ...ion} (${edu.period}). He also [32mhas[37m the ${data.certifications[0]...
+          ╵                                  [32m~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'has'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:193:94:
+[37m      193 │ ...ion} (${edu.period}). He also [32mhas[37m the ${data.certifications[0]...
+          ╵                                  [32m~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:193:98:
+[37m      193 │ ... (${edu.period}). He also has [32mthe[37m ${data.certifications[0].nam...
+          ╵                                  [32m~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'the'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:193:98:
+[37m      193 │ ... (${edu.period}). He also has [32mthe[37m ${data.certifications[0].nam...
+          ╵                                  [32m~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:193:102:
+[37m      193 │ ...${edu.period}). He also has the [32m$[37m{data.certifications[0].name}.`;
+          ╵                                    [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2592: Cannot find name '$'. Do you need to install type definitions for jQuery? Try `npm i --save-dev @types/jquery` and then add 'jquery' to the types field in your tsconfig.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:193:102:
+[37m      193 │ ...${edu.period}). He also has the [32m$[37m{data.certifications[0].name}.`;
+          ╵                                    [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1128: Declaration or statement expected.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:193:132:
+[37m      193 │ ...${edu.period}). He also has the ${data.certifications[0].name}[32m.[37m`;
+          ╵                                                                  [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1005: ';' expected.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:199:11:
+[37m      199 │         ? `[32mManuel[37m Alba posee la ${cert.name}. Puedes verificarla ...
+          ╵            [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Manuel'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:199:11:
+[37m      199 │         ? `[32mManuel[37m Alba posee la ${cert.name}. Puedes verificarla ...
+          ╵            [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:199:18:
+[37m      199 │         ? `Manuel [32mAlba[37m posee la ${cert.name}. Puedes verificarla ...
+          ╵                   [32m~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Alba'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:199:18:
+[37m      199 │         ? `Manuel [32mAlba[37m posee la ${cert.name}. Puedes verificarla ...
+          ╵                   [32m~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:199:23:
+[37m      199 │         ? `Manuel Alba [32mposee[37m la ${cert.name}. Puedes verificarla ...
+          ╵                        [32m~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'posee'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:199:23:
+[37m      199 │         ? `Manuel Alba [32mposee[37m la ${cert.name}. Puedes verificarla ...
+          ╵                        [32m~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:199:29:
+[37m      199 │         ? `Manuel Alba posee [32mla[37m ${cert.name}. Puedes verificarla ...
+          ╵                              [32m~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'la'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:199:29:
+[37m      199 │         ? `Manuel Alba posee [32mla[37m ${cert.name}. Puedes verificarla ...
+          ╵                              [32m~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:199:32:
+[37m      199 │         ? `Manuel Alba posee la [32m$[37m{cert.name}. Puedes verificarla ...
+          ╵                                 [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2592: Cannot find name '$'. Do you need to install type definitions for jQuery? Try `npm i --save-dev @types/jquery` and then add 'jquery' to the types field in your tsconfig.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:199:32:
+[37m      199 │         ? `Manuel Alba posee la [32m$[37m{cert.name}. Puedes verificarla ...
+          ╵                                 [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'cert'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:199:34:
+[37m      199 │ ...   ? `Manuel Alba posee la ${[32mcert[37m.name}. Puedes verificarla en...
+          ╵                                 [32m~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1128: Declaration or statement expected.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:199:44:
+[37m      199 │ ...nuel Alba posee la ${cert.name}[32m.[37m Puedes verificarla en: ${cert...
+          ╵                                   [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:199:46:
+[37m      199 │ ...l Alba posee la ${cert.name}. [32mPuedes[37m verificarla en: ${cert.url}`
+          ╵                                  [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Puedes'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:199:46:
+[37m      199 │ ...l Alba posee la ${cert.name}. [32mPuedes[37m verificarla en: ${cert.url}`
+          ╵                                  [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:199:53:
+[37m      199 │ ...l Alba posee la ${cert.name}. Puedes [32mverificarla[37m en: ${cert.url}`
+          ╵                                         [32m~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'verificarla'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:199:53:
+[37m      199 │ ...l Alba posee la ${cert.name}. Puedes [32mverificarla[37m en: ${cert.url}`
+          ╵                                         [32m~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:199:69:
+[37m      199 │ ...l Alba posee la ${cert.name}. Puedes verificarla en: [32m$[37m{cert.url}`
+          ╵                                                         [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2592: Cannot find name '$'. Do you need to install type definitions for jQuery? Try `npm i --save-dev @types/jquery` and then add 'jquery' to the types field in your tsconfig.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:199:69:
+[37m      199 │ ...l Alba posee la ${cert.name}. Puedes verificarla en: [32m$[37m{cert.url}`
+          ╵                                                         [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'cert'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:199:71:
+[37m      199 │ ...l Alba posee la ${cert.name}. Puedes verificarla en: ${[32mcert[37m.url}`
+          ╵                                                           [32m~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1005: ';' expected.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:200:11:
+[37m      200 │         : `[32mManuel[37m Alba holds the ${cert.name}. You can verify it ...
+          ╵            [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Manuel'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:200:11:
+[37m      200 │         : `[32mManuel[37m Alba holds the ${cert.name}. You can verify it ...
+          ╵            [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:200:18:
+[37m      200 │         : `Manuel [32mAlba[37m holds the ${cert.name}. You can verify it ...
+          ╵                   [32m~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Alba'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:200:18:
+[37m      200 │         : `Manuel [32mAlba[37m holds the ${cert.name}. You can verify it ...
+          ╵                   [32m~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:200:23:
+[37m      200 │         : `Manuel Alba [32mholds[37m the ${cert.name}. You can verify it ...
+          ╵                        [32m~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'holds'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:200:23:
+[37m      200 │         : `Manuel Alba [32mholds[37m the ${cert.name}. You can verify it ...
+          ╵                        [32m~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:200:29:
+[37m      200 │         : `Manuel Alba holds [32mthe[37m ${cert.name}. You can verify it ...
+          ╵                              [32m~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'the'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:200:29:
+[37m      200 │         : `Manuel Alba holds [32mthe[37m ${cert.name}. You can verify it ...
+          ╵                              [32m~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:200:33:
+[37m      200 │         : `Manuel Alba holds the [32m$[37m{cert.name}. You can verify it ...
+          ╵                                  [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2592: Cannot find name '$'. Do you need to install type definitions for jQuery? Try `npm i --save-dev @types/jquery` and then add 'jquery' to the types field in your tsconfig.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:200:33:
+[37m      200 │         : `Manuel Alba holds the [32m$[37m{cert.name}. You can verify it ...
+          ╵                                  [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'cert'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:200:35:
+[37m      200 │ ...  : `Manuel Alba holds the ${[32mcert[37m.name}. You can verify it at:...
+          ╵                                 [32m~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1128: Declaration or statement expected.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:200:45:
+[37m      200 │ ...uel Alba holds the ${cert.name}[32m.[37m You can verify it at: ${cert....
+          ╵                                   [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:200:47:
+[37m      200 │ ... Alba holds the ${cert.name}. [32mYou[37m can verify it at: ${cert.url}`;
+          ╵                                  [32m~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'You'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:200:47:
+[37m      200 │ ... Alba holds the ${cert.name}. [32mYou[37m can verify it at: ${cert.url}`;
+          ╵                                  [32m~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:200:51:
+[37m      200 │ ... Alba holds the ${cert.name}. You [32mcan[37m verify it at: ${cert.url}`;
+          ╵                                      [32m~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'can'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:200:51:
+[37m      200 │ ... Alba holds the ${cert.name}. You [32mcan[37m verify it at: ${cert.url}`;
+          ╵                                      [32m~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:200:55:
+[37m      200 │ ... Alba holds the ${cert.name}. You can [32mverify[37m it at: ${cert.url}`;
+          ╵                                          [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'verify'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:200:55:
+[37m      200 │ ... Alba holds the ${cert.name}. You can [32mverify[37m it at: ${cert.url}`;
+          ╵                                          [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:200:62:
+[37m      200 │ ... Alba holds the ${cert.name}. You can verify [32mit[37m at: ${cert.url}`;
+          ╵                                                 [32m~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2593: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha` and then add 'jest' or 'mocha' to the types field in your tsconfig.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:200:62:
+[37m      200 │ ... Alba holds the ${cert.name}. You can verify [32mit[37m at: ${cert.url}`;
+          ╵                                                 [32m~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:200:69:
+[37m      200 │ ... Alba holds the ${cert.name}. You can verify it at: [32m$[37m{cert.url}`;
+          ╵                                                        [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2592: Cannot find name '$'. Do you need to install type definitions for jQuery? Try `npm i --save-dev @types/jquery` and then add 'jquery' to the types field in your tsconfig.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:200:69:
+[37m      200 │ ... Alba holds the ${cert.name}. You can verify it at: [32m$[37m{cert.url}`;
+          ╵                                                        [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'cert'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:200:71:
+[37m      200 │ ... Alba holds the ${cert.name}. You can verify it at: ${[32mcert[37m.url}`;
+          ╵                                                          [32m~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1005: ';' expected.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:205:11:
+[37m      205 │         ? `[32mEl[37m stack tecnico de Manuel Alba incluye: ${data.stack....
+          ╵            [32m~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'El'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:205:11:
+[37m      205 │         ? `[32mEl[37m stack tecnico de Manuel Alba incluye: ${data.stack....
+          ╵            [32m~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:205:14:
+[37m      205 │         ? `El [32mstack[37m tecnico de Manuel Alba incluye: ${data.stack....
+          ╵               [32m~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'stack'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:205:14:
+[37m      205 │         ? `El [32mstack[37m tecnico de Manuel Alba incluye: ${data.stack....
+          ╵               [32m~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:205:20:
+[37m      205 │         ? `El stack [32mtecnico[37m de Manuel Alba incluye: ${data.stack....
+          ╵                     [32m~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'tecnico'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:205:20:
+[37m      205 │         ? `El stack [32mtecnico[37m de Manuel Alba incluye: ${data.stack....
+          ╵                     [32m~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:205:28:
+[37m      205 │         ? `El stack tecnico [32mde[37m Manuel Alba incluye: ${data.stack....
+          ╵                             [32m~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'de'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:205:28:
+[37m      205 │         ? `El stack tecnico [32mde[37m Manuel Alba incluye: ${data.stack....
+          ╵                             [32m~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:205:31:
+[37m      205 │         ? `El stack tecnico de [32mManuel[37m Alba incluye: ${data.stack....
+          ╵                                [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Manuel'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:205:31:
+[37m      205 │         ? `El stack tecnico de [32mManuel[37m Alba incluye: ${data.stack....
+          ╵                                [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:205:38:
+[37m      205 │ ... `El stack tecnico de Manuel [32mAlba[37m incluye: ${data.stack.join('...
+          ╵                                 [32m~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Alba'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:205:38:
+[37m      205 │ ... `El stack tecnico de Manuel [32mAlba[37m incluye: ${data.stack.join('...
+          ╵                                 [32m~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:205:52:
+[37m      205 │ ...ecnico de Manuel Alba incluye: [32m$[37m{data.stack.join(', ')}. Su es...
+          ╵                                   [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2592: Cannot find name '$'. Do you need to install type definitions for jQuery? Try `npm i --save-dev @types/jquery` and then add 'jquery' to the types field in your tsconfig.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:205:52:
+[37m      205 │ ...ecnico de Manuel Alba incluye: [32m$[37m{data.stack.join(', ')}. Su es...
+          ╵                                   [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1128: Declaration or statement expected.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:205:76:
+[37m      205 │ ...cluye: ${data.stack.join(', ')}[32m.[37m Su especialidad principal es ...
+          ╵                                   [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:205:78:
+[37m      205 │ ...ye: ${data.stack.join(', ')}. [32mSu[37m especialidad principal es Ang...
+          ╵                                  [32m~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Su'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:205:78:
+[37m      205 │ ...ye: ${data.stack.join(', ')}. [32mSu[37m especialidad principal es Ang...
+          ╵                                  [32m~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:205:81:
+[37m      205 │ ...ta.stack.join(', ')}. Su [32mespecialidad[37m principal es Angular con...
+          ╵                             [32m~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'especialidad'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:205:81:
+[37m      205 │ ...ta.stack.join(', ')}. Su [32mespecialidad[37m principal es Angular con...
+          ╵                             [32m~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:205:94:
+[37m      205 │ ...in(', ')}. Su especialidad [32mprincipal[37m es Angular con TypeScript...
+          ╵                               [32m~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'principal'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:205:94:
+[37m      205 │ ...in(', ')}. Su especialidad [32mprincipal[37m es Angular con TypeScript...
+          ╵                               [32m~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:205:104:
+[37m      205 │ ...')}. Su especialidad principal [32mes[37m Angular con TypeScript y RxJS.`
+          ╵                                   [32m~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'es'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:205:104:
+[37m      205 │ ...')}. Su especialidad principal [32mes[37m Angular con TypeScript y RxJS.`
+          ╵                                   [32m~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:205:107:
+[37m      205 │ ...')}. Su especialidad principal es [32mAngular[37m con TypeScript y RxJS.`
+          ╵                                      [32m~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Angular'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:205:107:
+[37m      205 │ ...')}. Su especialidad principal es [32mAngular[37m con TypeScript y RxJS.`
+          ╵                                      [32m~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:205:115:
+[37m      205 │ ...')}. Su especialidad principal es Angular [32mcon[37m TypeScript y RxJS.`
+          ╵                                              [32m~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'con'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:205:115:
+[37m      205 │ ...')}. Su especialidad principal es Angular [32mcon[37m TypeScript y RxJS.`
+          ╵                                              [32m~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:205:119:
+[37m      205 │ ...')}. Su especialidad principal es Angular con [32mTypeScript[37m y RxJS.`
+          ╵                                                  [32m~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'TypeScript'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:205:119:
+[37m      205 │ ...')}. Su especialidad principal es Angular con [32mTypeScript[37m y RxJS.`
+          ╵                                                  [32m~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:205:130:
+[37m      205 │ ...')}. Su especialidad principal es Angular con TypeScript [32my[37m RxJS.`
+          ╵                                                             [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'y'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:205:130:
+[37m      205 │ ...')}. Su especialidad principal es Angular con TypeScript [32my[37m RxJS.`
+          ╵                                                             [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'RxJS'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:205:132:
+[37m      205 │ ...')}. Su especialidad principal es Angular con TypeScript y [32mRxJS[37m.`
+          ╵                                                               [32m~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1003: Identifier expected.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:205:137:
+[37m      205 │ ...')}. Su especialidad principal es Angular con TypeScript y RxJS.[32m`[37m
+          ╵                                                                    [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:206:11:
+[37m      206 │         : `[32mManuel[37m Alba's technical stack includes: ${data.stack.j...
+          ╵            [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Manuel'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:206:11:
+[37m      206 │         : `[32mManuel[37m Alba's technical stack includes: ${data.stack.j...
+          ╵            [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:206:18:
+[37m      206 │         : `Manuel [32mAlba[37m's technical stack includes: ${data.stack.j...
+          ╵                   [32m~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Alba'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:206:18:
+[37m      206 │         : `Manuel [32mAlba[37m's technical stack includes: ${data.stack.j...
+          ╵                   [32m~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2695: Left side of comma operator is unused and has no side effects.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:206:22:
+[37m      206 │ ...anuel Alba[32m's technical stack includes: ${data.stack.join('[37m, ')...
+          ╵              [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1002: Unterminated string literal.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:206:134:
+[37m      206 │ ..., ')}. His core specialty is Angular with TypeScript and RxJS.`;[32m[37m
+          ╵                                                                    [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'queryWords'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:209:29:
+[37m      209 │     if (this.matchesKeywords([32mqueryWords[37m, ['highlight', 'achieveme...
+          ╵                              [32m~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'queryWords'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:216:29:
+[37m      216 │     if (this.matchesKeywords([32mqueryWords[37m, ['project', 'projects', ...
+          ╵                              [32m~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Tono'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:239:2:
+[37m      239 │ - [32mTono[37m: corporativo, profesional, conciso.
+          ╵   [32m~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1005: ';' expected.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:239:6:
+[37m      239 │ - Tono[32m:[37m corporativo, profesional, conciso.
+          ╵       [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'corporativo'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:239:8:
+[37m      239 │ - Tono: [32mcorporativo[37m, profesional, conciso.
+          ╵         [32m~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2695: Left side of comma operator is unused and has no side effects.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:239:8:
+[37m      239 │ - Tono: [32mcorporativo[37m, profesional, conciso.
+          ╵         [32m~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2695: Left side of comma operator is unused and has no side effects.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:239:8:
+[37m      239 │ - Tono: [32mcorporativo, profesional[37m, conciso.
+          ╵         [32m~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'profesional'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:239:21:
+[37m      239 │ - Tono: corporativo, [32mprofesional[37m, conciso.
+          ╵                      [32m~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'conciso'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:239:34:
+[37m      239 │ - Tono: corporativo, profesional, [32mconciso[37m.
+          ╵                                   [32m~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1003: Identifier expected.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:240:0:
+[37m      240 │ [32m-[37m Responde en el idioma del usuario.`;
+          ╵ [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Responde'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:240:2:
+[37m      240 │ - [32mResponde[37m en el idioma del usuario.`;
+          ╵   [32m~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1005: ';' expected.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:240:11:
+[37m      240 │ - Responde [32men[37m el idioma del usuario.`;
+          ╵            [32m~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'en'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:240:11:
+[37m      240 │ - Responde [32men[37m el idioma del usuario.`;
+          ╵            [32m~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:240:14:
+[37m      240 │ - Responde en [32mel[37m idioma del usuario.`;
+          ╵               [32m~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'el'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:240:14:
+[37m      240 │ - Responde en [32mel[37m idioma del usuario.`;
+          ╵               [32m~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:240:17:
+[37m      240 │ - Responde en el [32midioma[37m del usuario.`;
+          ╵                  [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'idioma'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:240:17:
+[37m      240 │ - Responde en el [32midioma[37m del usuario.`;
+          ╵                  [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:240:24:
+[37m      240 │ - Responde en el idioma [32mdel[37m usuario.`;
+          ╵                         [32m~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'del'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:240:24:
+[37m      240 │ - Responde en el idioma [32mdel[37m usuario.`;
+          ╵                         [32m~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'usuario'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:240:28:
+[37m      240 │ - Responde en el idioma del [32musuario[37m.`;
+          ╵                             [32m~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1003: Identifier expected.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:240:36:
+[37m      240 │ - Responde en el idioma del usuario.[32m`;[37m
+          ╵                                     [32m~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:243:12:
+[37m      243 │     return `[32mYou[37m are ManIA, a virtual assistant specialized exclus...
+          ╵             [32m~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'You'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:243:12:
+[37m      243 │     return `[32mYou[37m are ManIA, a virtual assistant specialized exclus...
+          ╵             [32m~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:243:16:
+[37m      243 │     return `You [32mare[37m ManIA, a virtual assistant specialized exclus...
+          ╵                 [32m~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'are'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:243:16:
+[37m      243 │     return `You [32mare[37m ManIA, a virtual assistant specialized exclus...
+          ╵                 [32m~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'ManIA'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:243:20:
+[37m      243 │     return `You are [32mManIA[37m, a virtual assistant specialized exclus...
+          ╵                     [32m~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2695: Left side of comma operator is unused and has no side effects.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:243:20:
+[37m      243 │     return `You are [32mManIA[37m, a virtual assistant specialized exclus...
+          ╵                     [32m~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'a'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:243:27:
+[37m      243 │     return `You are ManIA, [32ma[37m virtual assistant specialized exclus...
+          ╵                            [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1005: ';' expected.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:243:29:
+[37m      243 │     return `You are ManIA, a [32mvirtual[37m assistant specialized exclus...
+          ╵                              [32m~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'virtual'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:243:29:
+[37m      243 │     return `You are ManIA, a [32mvirtual[37m assistant specialized exclus...
+          ╵                              [32m~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:243:37:
+[37m      243 │ ... `You are ManIA, a virtual [32massistant[37m specialized exclusively i...
+          ╵                               [32m~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'assistant'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:243:37:
+[37m      243 │ ... `You are ManIA, a virtual [32massistant[37m specialized exclusively i...
+          ╵                               [32m~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:243:47:
+[37m      243 │ ...anIA, a virtual assistant [32mspecialized[37m exclusively in the profe...
+          ╵                              [32m~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'specialized'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:243:47:
+[37m      243 │ ...anIA, a virtual assistant [32mspecialized[37m exclusively in the profe...
+          ╵                              [32m~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'exclusively'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:243:59:
+[37m      243 │ ...ual assistant specialized [32mexclusively[37m in the professional care...
+          ╵                              [32m~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'the'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:243:74:
+[37m      243 │ ...nt specialized exclusively in [32mthe[37m professional career of Manue...
+          ╵                                  [32m~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1005: ';' expected.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:243:78:
+[37m      243 │ ...lized exclusively in the [32mprofessional[37m career of Manuel Alba Ho...
+          ╵                             [32m~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'professional'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:243:78:
+[37m      243 │ ...lized exclusively in the [32mprofessional[37m career of Manuel Alba Ho...
+          ╵                             [32m~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:243:91:
+[37m      243 │ ...d exclusively in the professional [32mcareer[37m of Manuel Alba Hornillo.
+          ╵                                      [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'career'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:243:91:
+[37m      243 │ ...d exclusively in the professional [32mcareer[37m of Manuel Alba Hornillo.
+          ╵                                      [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:243:98:
+[37m      243 │ ...d exclusively in the professional career [32mof[37m Manuel Alba Hornillo.
+          ╵                                             [32m~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'of'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:243:98:
+[37m      243 │ ...d exclusively in the professional career [32mof[37m Manuel Alba Hornillo.
+          ╵                                             [32m~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:243:101:
+[37m      243 │ ...d exclusively in the professional career of [32mManuel[37m Alba Hornillo.
+          ╵                                                [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Manuel'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:243:101:
+[37m      243 │ ...d exclusively in the professional career of [32mManuel[37m Alba Hornillo.
+          ╵                                                [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:243:108:
+[37m      243 │ ...d exclusively in the professional career of Manuel [32mAlba[37m Hornillo.
+          ╵                                                       [32m~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Alba'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:243:108:
+[37m      243 │ ...d exclusively in the professional career of Manuel [32mAlba[37m Hornillo.
+          ╵                                                       [32m~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Hornillo'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:243:113:
+[37m      243 │ ...d exclusively in the professional career of Manuel Alba [32mHornillo[37m.
+          ╵                                                            [32m~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1003: Identifier expected.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:243:122:
+[37m      243 │ ... exclusively in the professional career of Manuel Alba Hornillo.[32m[37m
+          ╵                                                                    [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:245:0:
+[37m      245 │ [32mCOMPLETE[37m PROFILE INFORMATION:
+          ╵ [32m~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'COMPLETE'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:245:0:
+[37m      245 │ [32mCOMPLETE[37m PROFILE INFORMATION:
+          ╵ [32m~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:245:9:
+[37m      245 │ COMPLETE [32mPROFILE[37m INFORMATION:
+          ╵          [32m~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'PROFILE'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:245:9:
+[37m      245 │ COMPLETE [32mPROFILE[37m INFORMATION:
+          ╵          [32m~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:246:6:
+[37m      246 │ Name: [32m$[37m{data.name}
+          ╵       [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2592: Cannot find name '$'. Do you need to install type definitions for jQuery? Try `npm i --save-dev @types/jquery` and then add 'jquery' to the types field in your tsconfig.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:246:6:
+[37m      246 │ Name: [32m$[37m{data.name}
+          ╵       [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'data'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:246:8:
+[37m      246 │ Name: ${[32mdata[37m.name}
+          ╵         [32m~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:247:7:
+[37m      247 │ Title: [32m$[37m{data.title}
+          ╵        [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2592: Cannot find name '$'. Do you need to install type definitions for jQuery? Try `npm i --save-dev @types/jquery` and then add 'jquery' to the types field in your tsconfig.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:247:7:
+[37m      247 │ Title: [32m$[37m{data.title}
+          ╵        [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'data'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:247:9:
+[37m      247 │ Title: ${[32mdata[37m.title}
+          ╵          [32m~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:248:10:
+[37m      248 │ Location: [32m$[37m{data.contact.location}
+          ╵           [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2592: Cannot find name '$'. Do you need to install type definitions for jQuery? Try `npm i --save-dev @types/jquery` and then add 'jquery' to the types field in your tsconfig.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:248:10:
+[37m      248 │ Location: [32m$[37m{data.contact.location}
+          ╵           [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'data'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:248:12:
+[37m      248 │ Location: ${[32mdata[37m.contact.location}
+          ╵             [32m~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:249:7:
+[37m      249 │ Email: [32m$[37m{data.contact.email}
+          ╵        [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2592: Cannot find name '$'. Do you need to install type definitions for jQuery? Try `npm i --save-dev @types/jquery` and then add 'jquery' to the types field in your tsconfig.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:249:7:
+[37m      249 │ Email: [32m$[37m{data.contact.email}
+          ╵        [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'data'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:249:9:
+[37m      249 │ Email: ${[32mdata[37m.contact.email}
+          ╵          [32m~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:250:7:
+[37m      250 │ Phone: [32m$[37m{data.contact.phone}
+          ╵        [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2592: Cannot find name '$'. Do you need to install type definitions for jQuery? Try `npm i --save-dev @types/jquery` and then add 'jquery' to the types field in your tsconfig.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:250:7:
+[37m      250 │ Phone: [32m$[37m{data.contact.phone}
+          ╵        [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'data'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:250:9:
+[37m      250 │ Phone: ${[32mdata[37m.contact.phone}
+          ╵          [32m~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:251:10:
+[37m      251 │ LinkedIn: [32m$[37m{data.contact.linkedin}
+          ╵           [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2592: Cannot find name '$'. Do you need to install type definitions for jQuery? Try `npm i --save-dev @types/jquery` and then add 'jquery' to the types field in your tsconfig.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:251:10:
+[37m      251 │ LinkedIn: [32m$[37m{data.contact.linkedin}
+          ╵           [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'data'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:251:12:
+[37m      251 │ LinkedIn: ${[32mdata[37m.contact.linkedin}
+          ╵             [32m~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:253:9:
+[37m      253 │ Summary: [32m$[37m{data.summary}
+          ╵          [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2592: Cannot find name '$'. Do you need to install type definitions for jQuery? Try `npm i --save-dev @types/jquery` and then add 'jquery' to the types field in your tsconfig.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:253:9:
+[37m      253 │ Summary: [32m$[37m{data.summary}
+          ╵          [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'data'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:253:11:
+[37m      253 │ Summary: ${[32mdata[37m.summary}
+          ╵            [32m~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:255:0:
+[37m      255 │ [32mTechnical[37m stack: ${data.stack.join(', ')}
+          ╵ [32m~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Technical'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:255:0:
+[37m      255 │ [32mTechnical[37m stack: ${data.stack.join(', ')}
+          ╵ [32m~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:255:17:
+[37m      255 │ Technical stack: [32m$[37m{data.stack.join(', ')}
+          ╵                  [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2592: Cannot find name '$'. Do you need to install type definitions for jQuery? Try `npm i --save-dev @types/jquery` and then add 'jquery' to the types field in your tsconfig.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:255:17:
+[37m      255 │ Technical stack: [32m$[37m{data.stack.join(', ')}
+          ╵                  [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'data'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:255:19:
+[37m      255 │ Technical stack: ${[32mdata[37m.stack.join(', ')}
+          ╵                    [32m~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:257:0:
+[37m      257 │ [32mProfessional[37m highlights:
+          ╵ [32m~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Professional'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:257:0:
+[37m      257 │ [32mProfessional[37m highlights:
+          ╵ [32m~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:258:0:
+[37m      258 │ [32m$[37m{data.highlights.map(h => `- ${h}`).join('\n')}
+          ╵ [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2592: Cannot find name '$'. Do you need to install type definitions for jQuery? Try `npm i --save-dev @types/jquery` and then add 'jquery' to the types field in your tsconfig.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:258:0:
+[37m      258 │ [32m$[37m{data.highlights.map(h => `- ${h}`).join('\n')}
+          ╵ [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'data'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:258:2:
+[37m      258 │ ${[32mdata[37m.highlights.map(h => `- ${h}`).join('\n')}
+          ╵   [32m~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'h' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:258:22:
+[37m      258 │ ${data.highlights.map([32mh[37m => `- ${h}`).join('\n')}
+          ╵                       [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:260:0:
+[37m      260 │ [32mWork[37m experience:
+          ╵ [32m~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Work'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:260:0:
+[37m      260 │ [32mWork[37m experience:
+          ╵ [32m~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:261:0:
+[37m      261 │ [32m$[37m{experienceText}
+          ╵ [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2592: Cannot find name '$'. Do you need to install type definitions for jQuery? Try `npm i --save-dev @types/jquery` and then add 'jquery' to the types field in your tsconfig.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:261:0:
+[37m      261 │ [32m$[37m{experienceText}
+          ╵ [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'experienceText'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:261:2:
+[37m      261 │ ${[32mexperienceText[37m}
+          ╵   [32m~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:263:0:
+[37m      263 │ [32mFeatured[37m projects:
+          ╵ [32m~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Featured'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:263:0:
+[37m      263 │ [32mFeatured[37m projects:
+          ╵ [32m~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:264:0:
+[37m      264 │ [32m$[37m{projectsText}
+          ╵ [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2592: Cannot find name '$'. Do you need to install type definitions for jQuery? Try `npm i --save-dev @types/jquery` and then add 'jquery' to the types field in your tsconfig.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:264:0:
+[37m      264 │ [32m$[37m{projectsText}
+          ╵ [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'projectsText'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:264:2:
+[37m      264 │ ${[32mprojectsText[37m}
+          ╵   [32m~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:267:0:
+[37m      267 │ [32m$[37m{educationText}
+          ╵ [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2592: Cannot find name '$'. Do you need to install type definitions for jQuery? Try `npm i --save-dev @types/jquery` and then add 'jquery' to the types field in your tsconfig.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:267:0:
+[37m      267 │ [32m$[37m{educationText}
+          ╵ [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'educationText'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:267:2:
+[37m      267 │ ${[32meducationText[37m}
+          ╵   [32m~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:270:0:
+[37m      270 │ [32m$[37m{certificationsText}
+          ╵ [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2592: Cannot find name '$'. Do you need to install type definitions for jQuery? Try `npm i --save-dev @types/jquery` and then add 'jquery' to the types field in your tsconfig.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:270:0:
+[37m      270 │ [32m$[37m{certificationsText}
+          ╵ [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'certificationsText'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:270:2:
+[37m      270 │ ${[32mcertificationsText[37m}
+          ╵   [32m~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:273:0:
+[37m      273 │ [32m$[37m{data.languages.map(l => `${l.name}: ${l.level}`).join('\n')}
+          ╵ [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2592: Cannot find name '$'. Do you need to install type definitions for jQuery? Try `npm i --save-dev @types/jquery` and then add 'jquery' to the types field in your tsconfig.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:273:0:
+[37m      273 │ [32m$[37m{data.languages.map(l => `${l.name}: ${l.level}`).join('\n')}
+          ╵ [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'data'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:273:2:
+[37m      273 │ ${[32mdata[37m.languages.map(l => `${l.name}: ${l.level}`).join('\n')}
+          ╵   [32m~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'l' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:273:21:
+[37m      273 │ ${data.languages.map([32ml[37m => `${l.name}: ${l.level}`).join('\n')}
+          ╵                      [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:275:0:
+[37m      275 │ [32mSTRICT[37m RULES:
+          ╵ [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'STRICT'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:275:0:
+[37m      275 │ [32mSTRICT[37m RULES:
+          ╵ [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Answer'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:276:2:
+[37m      276 │ - [32mAnswer[37m ONLY about Manuel Alba's career, experience, stack, or e...
+          ╵   [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1005: ';' expected.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:276:9:
+[37m      276 │ - Answer [32mONLY[37m about Manuel Alba's career, experience, stack, or e...
+          ╵          [32m~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'ONLY'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:276:9:
+[37m      276 │ - Answer [32mONLY[37m about Manuel Alba's career, experience, stack, or e...
+          ╵          [32m~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1435: Unknown keyword or identifier. Did you mean 'out'?[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:276:14:
+[37m      276 │ - Answer ONLY [32mabout[37m Manuel Alba's career, experience, stack, or e...
+          ╵               [32m~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'about'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:276:14:
+[37m      276 │ - Answer ONLY [32mabout[37m Manuel Alba's career, experience, stack, or e...
+          ╵               [32m~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:276:20:
+[37m      276 │ - Answer ONLY about [32mManuel[37m Alba's career, experience, stack, or e...
+          ╵                     [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Manuel'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:276:20:
+[37m      276 │ - Answer ONLY about [32mManuel[37m Alba's career, experience, stack, or e...
+          ╵                     [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:276:27:
+[37m      276 │ - Answer ONLY about Manuel [32mAlba[37m's career, experience, stack, or e...
+          ╵                            [32m~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Alba'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:276:27:
+[37m      276 │ - Answer ONLY about Manuel [32mAlba[37m's career, experience, stack, or e...
+          ╵                            [32m~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2362: The left-hand side of an arithmetic operation must be of type 'any', 'number', 'bigint' or an enum type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:276:31:
+[37m      276 │ ...ONLY about Manuel Alba[32m's career, experience, stack, or education.[37m
+          ╵                          [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1002: Unterminated string literal.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:276:74:
+[37m      276 │ ...NLY about Manuel Alba's career, experience, stack, or education.[32m[37m
+          ╵                                                                    [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'If'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:277:2:
+[37m      277 │ - [32mIf[37m asked about another topic, respond that you can only discuss...
+          ╵   [32m~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1005: ';' expected.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:277:5:
+[37m      277 │ - If [32masked[37m about another topic, respond that you can only discuss...
+          ╵      [32m~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'asked'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:277:5:
+[37m      277 │ - If [32masked[37m about another topic, respond that you can only discuss...
+          ╵      [32m~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1435: Unknown keyword or identifier. Did you mean 'out'?[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:277:11:
+[37m      277 │ - If asked [32mabout[37m another topic, respond that you can only discuss...
+          ╵            [32m~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'about'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:277:11:
+[37m      277 │ - If asked [32mabout[37m another topic, respond that you can only discuss...
+          ╵            [32m~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:277:17:
+[37m      277 │ - If asked about [32manother[37m topic, respond that you can only discuss...
+          ╵                  [32m~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'another'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:277:17:
+[37m      277 │ - If asked about [32manother[37m topic, respond that you can only discuss...
+          ╵                  [32m~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'topic'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:277:25:
+[37m      277 │ - If asked about another [32mtopic[37m, respond that you can only discuss...
+          ╵                          [32m~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2695: Left side of comma operator is unused and has no side effects.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:277:25:
+[37m      277 │ - If asked about another [32mtopic[37m, respond that you can only discuss...
+          ╵                          [32m~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'respond'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:277:32:
+[37m      277 │ ... asked about another topic, [32mrespond[37m that you can only discuss ...
+          ╵                                [32m~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1005: ';' expected.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:277:40:
+[37m      277 │ ...about another topic, respond [32mthat[37m you can only discuss Manuel ...
+          ╵                                 [32m~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'that'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:277:40:
+[37m      277 │ ...about another topic, respond [32mthat[37m you can only discuss Manuel ...
+          ╵                                 [32m~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:277:45:
+[37m      277 │ ...out another topic, respond that [32myou[37m can only discuss Manuel Alba.
+          ╵                                    [32m~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'you'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:277:45:
+[37m      277 │ ...out another topic, respond that [32myou[37m can only discuss Manuel Alba.
+          ╵                                    [32m~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:277:49:
+[37m      277 │ ...out another topic, respond that you [32mcan[37m only discuss Manuel Alba.
+          ╵                                        [32m~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'can'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:277:49:
+[37m      277 │ ...out another topic, respond that you [32mcan[37m only discuss Manuel Alba.
+          ╵                                        [32m~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:277:53:
+[37m      277 │ ...out another topic, respond that you can [32monly[37m discuss Manuel Alba.
+          ╵                                            [32m~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'only'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:277:53:
+[37m      277 │ ...out another topic, respond that you can [32monly[37m discuss Manuel Alba.
+          ╵                                            [32m~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:277:58:
+[37m      277 │ ...out another topic, respond that you can only [32mdiscuss[37m Manuel Alba.
+          ╵                                                 [32m~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'discuss'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:277:58:
+[37m      277 │ ...out another topic, respond that you can only [32mdiscuss[37m Manuel Alba.
+          ╵                                                 [32m~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:277:66:
+[37m      277 │ ...out another topic, respond that you can only discuss [32mManuel[37m Alba.
+          ╵                                                         [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Manuel'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:277:66:
+[37m      277 │ ...out another topic, respond that you can only discuss [32mManuel[37m Alba.
+          ╵                                                         [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Alba'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:277:73:
+[37m      277 │ ...out another topic, respond that you can only discuss Manuel [32mAlba[37m.
+          ╵                                                                [32m~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1003: Identifier expected.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:278:0:
+[37m      278 │ [32m-[37m Tone: corporate, professional, concise.
+          ╵ [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Tone'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:278:2:
+[37m      278 │ - [32mTone[37m: corporate, professional, concise.
+          ╵   [32m~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1005: ';' expected.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:278:6:
+[37m      278 │ - Tone[32m:[37m corporate, professional, concise.
+          ╵       [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'corporate'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:278:8:
+[37m      278 │ - Tone: [32mcorporate[37m, professional, concise.
+          ╵         [32m~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2695: Left side of comma operator is unused and has no side effects.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:278:8:
+[37m      278 │ - Tone: [32mcorporate[37m, professional, concise.
+          ╵         [32m~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2695: Left side of comma operator is unused and has no side effects.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:278:8:
+[37m      278 │ - Tone: [32mcorporate, professional[37m, concise.
+          ╵         [32m~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'professional'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:278:19:
+[37m      278 │ - Tone: corporate, [32mprofessional[37m, concise.
+          ╵                    [32m~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'concise'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:278:33:
+[37m      278 │ - Tone: corporate, professional, [32mconcise[37m.
+          ╵                                  [32m~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1003: Identifier expected.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:279:0:
+[37m      279 │ [32m-[37m Respond in the user's language.`;
+          ╵ [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Respond'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:279:2:
+[37m      279 │ - [32mRespond[37m in the user's language.`;
+          ╵   [32m~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'the'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:279:13:
+[37m      279 │ - Respond in [32mthe[37m user's language.`;
+          ╵              [32m~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1005: ';' expected.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:279:17:
+[37m      279 │ - Respond in the [32muser[37m's language.`;
+          ╵                  [32m~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:279:17:
+[37m      279 │ - Respond in the [32muser[37m's language.`;
+          ╵                  [32m~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'user'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:279:17:
+[37m      279 │ - Respond in the [32muser[37m's language.`;
+          ╵                  [32m~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1002: Unterminated string literal.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:279:35:
+[37m      279 │ - Respond in the user's language.`;[32m[37m
+          ╵                                    [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1128: Declaration or statement expected.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:280:2:
+[37m      280 │   [32m}[37m
+          ╵   [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1128: Declaration or statement expected.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:281:2:
+[37m      281 │   [32mprivate[37m isOnTopic(query: string): boolean {
+          ╵   [32m~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'isOnTopic'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:281:10:
+[37m      281 │   private [32misOnTopic[37m(query: string): boolean {
+          ╵           [32m~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'query'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:281:20:
+[37m      281 │   private isOnTopic([32mquery[37m: string): boolean {
+          ╵                     [32m~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1005: ',' expected.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:281:25:
+[37m      281 │   private isOnTopic(query[32m:[37m string): boolean {
+          ╵                          [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2693: 'string' only refers to a type, but is being used as a value here.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:281:27:
+[37m      281 │   private isOnTopic(query: [32mstring[37m): boolean {
+          ╵                            [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1005: ';' expected.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:281:34:
+[37m      281 │   private isOnTopic(query: string)[32m:[37m boolean {
+          ╵                                   [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:281:36:
+[37m      281 │   private isOnTopic(query: string): [32mboolean[37m {
+          ╵                                     [32m~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2693: 'boolean' only refers to a type, but is being used as a value here.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:281:36:
+[37m      281 │   private isOnTopic(query: string): [32mboolean[37m {
+          ╵                                     [32m~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1128: Declaration or statement expected.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:299:2:
+[37m      299 │   [32mprivate[37m getOffTopicResponse(lang: 'es' | 'en'): string {
+          ╵   [32m~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'getOffTopicResponse'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:299:10:
+[37m      299 │   private [32mgetOffTopicResponse[37m(lang: 'es' | 'en'): string {
+          ╵           [32m~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'lang'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:299:30:
+[37m      299 │   private getOffTopicResponse([32mlang[37m: 'es' | 'en'): string {
+          ╵                               [32m~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1005: ',' expected.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:299:34:
+[37m      299 │   private getOffTopicResponse(lang[32m:[37m 'es' | 'en'): string {
+          ╵                                   [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2362: The left-hand side of an arithmetic operation must be of type 'any', 'number', 'bigint' or an enum type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:299:36:
+[37m      299 │   private getOffTopicResponse(lang: [32m'es'[37m | 'en'): string {
+          ╵                                     [32m~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2363: The right-hand side of an arithmetic operation must be of type 'any', 'number', 'bigint' or an enum type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:299:43:
+[37m      299 │   private getOffTopicResponse(lang: 'es' | [32m'en'[37m): string {
+          ╵                                            [32m~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1005: ';' expected.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:299:48:
+[37m      299 │   private getOffTopicResponse(lang: 'es' | 'en')[32m:[37m string {
+          ╵                                                 [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:299:50:
+[37m      299 │   private getOffTopicResponse(lang: 'es' | 'en'): [32mstring[37m {
+          ╵                                                   [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2693: 'string' only refers to a type, but is being used as a value here.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:299:50:
+[37m      299 │   private getOffTopicResponse(lang: 'es' | 'en'): [32mstring[37m {
+          ╵                                                   [32m~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'lang'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/services/mania-chat.service.ts:300:22:
+[37m      300 │     const responses = [32mlang[37m === 'es' ? OFF_TOPIC_RESPONSES_ES : OF...
+          ╵                       [32m~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mExpected identifier but found "`\r\n        : `"[0m
+
+    src/app/services/mania-chat.service.ts:335:18:
+[37m      335 │             RxJS. [32m`[37m
+          ╵                   [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mExpected identifier but found "`\r\n        : `"[0m
+
+    src/app/services/mania-chat.service.ts:335:18:
+[37m      335 │             RxJS. [32m`[37m
+          ╵                   [32m^[0m
+
+[39m[22m

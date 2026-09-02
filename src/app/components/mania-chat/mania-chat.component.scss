@@ -1,0 +1,136 @@
+:host {
+  display: contents;
+}
+
+.hold-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  cursor: pointer;
+}
+
+.hold-icon {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hold-trash {
+  transition: color 0.2s ease;
+}
+
+.hold-ring {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 30px;
+  height: 30px;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.ring-track,
+.ring-progress {
+  fill: none;
+  stroke-width: 2.5;
+  stroke-linecap: round;
+}
+
+.ring-track {
+  stroke: transparent;
+}
+
+.ring-progress {
+  stroke: #f43f5e;
+  stroke-dasharray: 100;
+  stroke-dashoffset: 100;
+  transform: rotate(-90deg);
+  transform-origin: center;
+  transition: stroke-dashoffset 1.5s linear 0s;
+  will-change: stroke-dashoffset;
+}
+
+.hold-hint {
+  position: absolute;
+  right: calc(100% + 0.5rem);
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 11px;
+  color: #94a3b8;
+  white-space: nowrap;
+  background: rgba(15, 23, 42, 0.9);
+  border: 1px solid #1e293b;
+  border-radius: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  pointer-events: none;
+  animation: hold-hint-in 0.15s ease;
+}
+
+@keyframes hold-hint-in {
+  from {
+    opacity: 0;
+    transform: translateY(-50%) translateX(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(-50%) translateX(0);
+  }
+}
+
+.hold-btn.is-holding .ring-progress {
+  stroke-dashoffset: 0;
+}
+
+.hold-btn.is-holding .hold-trash {
+  color: #fb7185;
+}
+
+.hold-btn.is-done .hold-trash {
+  color: #f43f5e;
+}
+
+.hold-label {
+  font-size: 11px;
+  color: #94a3b8;
+  white-space: nowrap;
+  animation: hold-label-in 0.2s ease;
+}
+
+@keyframes hold-label-in {
+  from {
+    opacity: 0;
+    transform: translateX(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.messages-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(34, 211, 238, 0.3) transparent;
+}
+
+.messages-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+
+.messages-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.messages-scroll::-webkit-scrollbar-thumb {
+  background: rgba(34, 211, 238, 0.3);
+  border-radius: 4px;
+  transition: background 0.2s ease;
+}
+
+.messages-scroll::-webkit-scrollbar-thumb:hover {
+  background: rgba(34, 211, 238, 0.55);
+}

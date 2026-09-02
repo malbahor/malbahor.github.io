@@ -6,6 +6,7 @@ import { ExperienceComponent } from './components/experience/experience.componen
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ScrollTopComponent } from './components/scroll-top/scroll-top.component';
+import { ManiaChatComponent } from './components/mania-chat/mania-chat.component';
 
 @Component({
   selector: 'app-root',
@@ -16,7 +17,8 @@ import { ScrollTopComponent } from './components/scroll-top/scroll-top.component
     ExperienceComponent,
     ProjectsComponent,
     ContactComponent,
-    ScrollTopComponent
+    ScrollTopComponent,
+    ManiaChatComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'

@@ -205,5 +205,18 @@
       { "name": "Email", "url": "mailto:mahx007@gmail.com", "handle": "mahx007@gmail.com", "icon": "email" },
       { "name": "Phone", "url": "tel:+34662919002", "handle": "+34 662 919 002", "icon": "phone" }
     ]
+  },
+  "mania": {
+    "fabAria": "Open ManIA assistant",
+    "closeAria": "Close ManIA assistant",
+    "widgetTitle": "ManIA",
+    "widgetSubtitle": "Professional career assistant",
+    "greeting": "Hi! I am ManIA, the virtual assistant of Manuel Alba. I can tell you about his professional experience, technical stack and engineering background. How can I help you?",
+    "messagePlaceholder": "Ask about Manuel's experience...",
+    "sendAria": "Send message",
+    "sendLabel": "Send",
+    "loadingLabel": "ManIA is thinking...",
+    "unexpectedError": "I could not process your request. Please try again.",
+    "introduction": "I am ManIA, Manuel Alba's professional career assistant. Ask me about his experience, technical stack, education and engineering achievements."
   }
 }

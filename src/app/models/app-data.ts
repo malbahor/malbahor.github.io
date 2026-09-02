@@ -135,6 +135,20 @@ export interface ContactData {
   socialLinks: SocialLink[];
 }
 
+export interface ManiaData {
+  fabAria: string;
+  closeAria: string;
+  widgetTitle: string;
+  widgetSubtitle: string;
+  greeting: string;
+  messagePlaceholder: string;
+  sendAria: string;
+  sendLabel: string;
+  loadingLabel: string;
+  unexpectedError: string;
+  introduction: string;
+}
+
 export interface ProfileData {
   name: string;
   title: string;
@@ -161,4 +175,5 @@ export interface AppData {
   experience: ExperienceData;
   projects: ProjectsData;
   contact: ContactData;
+  mania: ManiaData;
 }
