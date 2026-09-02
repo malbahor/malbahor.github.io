@@ -40,9 +40,8 @@
             type="button"
             (click)="setLanguage('en')"
             [attr.aria-label]="'Switch to English'"
-            [class]="language() === 'en'
-              ? 'p-1 rounded-md bg-slate-800 ring-1 ring-cyan-500/50 transition-all'
-              : 'p-1 rounded-md hover:bg-slate-800/60 transition-all'"
+            class="lang-btn"
+            [class.active]="currentLang === 'en'"
           >
             <svg class="w-5 h-5 rounded-sm" viewBox="0 0 24 16" xmlns="http://www.w3.org/2000/svg">
               <rect width="24" height="16" fill="#B22234"/>
@@ -55,9 +54,8 @@
             type="button"
             (click)="setLanguage('es')"
             [attr.aria-label]="'Cambiar a Español'"
-            [class]="language() === 'es'
-              ? 'p-1 rounded-md bg-slate-800 ring-1 ring-cyan-500/50 transition-all'
-              : 'p-1 rounded-md hover:bg-slate-800/60 transition-all'"
+            class="lang-btn"
+            [class.active]="currentLang === 'es'"
           >
             <svg class="w-5 h-5 rounded-sm" viewBox="0 0 24 16" xmlns="http://www.w3.org/2000/svg">
               <rect width="24" height="16" fill="#AA151B"/>
@@ -85,9 +83,8 @@
             type="button"
             (click)="setLanguage('en')"
             [attr.aria-label]="'Switch to English'"
-            [class]="language() === 'en'
-              ? 'p-1 rounded-md bg-slate-800 ring-1 ring-cyan-500/50 transition-all'
-              : 'p-1 rounded-md hover:bg-slate-800/60 transition-all'"
+            class="lang-btn"
+            [class.active]="currentLang === 'en'"
           >
             <svg class="w-5 h-5 rounded-sm" viewBox="0 0 24 16" xmlns="http://www.w3.org/2000/svg">
               <rect width="24" height="16" fill="#B22234"/>
@@ -100,9 +97,8 @@
             type="button"
             (click)="setLanguage('es')"
             [attr.aria-label]="'Cambiar a Español'"
-            [class]="language() === 'es'
-              ? 'p-1 rounded-md bg-slate-800 ring-1 ring-cyan-500/50 transition-all'
-              : 'p-1 rounded-md hover:bg-slate-800/60 transition-all'"
+            class="lang-btn"
+            [class.active]="currentLang === 'es'"
           >
             <svg class="w-5 h-5 rounded-sm" viewBox="0 0 24 16" xmlns="http://www.w3.org/2000/svg">
               <rect width="24" height="16" fill="#AA151B"/>

@@ -1,0 +1,21 @@
+.lang-btn {
+  padding: 0.25rem;
+  border-radius: 0.375rem;
+  border: 1px solid transparent;
+  background-color: transparent;
+  transition: border-color 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover:not(.active) {
+    background-color: rgba(30, 41, 59, 0.6);
+  }
+
+  &:focus-visible {
+    outline: 2px solid rgba(34, 211, 238, 0.5);
+    outline-offset: 2px;
+  }
+
+  &.active {
+    border-color: rgba(34, 211, 238, 0.5);
+    background-color: rgba(30, 41, 59, 1);
+  }
+}

@@ -18,6 +18,10 @@ export class NavbarComponent {
   readonly activeSection = signal('#home');
   isMenuOpen = signal(false);
 
+  get currentLang(): Language {
+    return this.language();
+  }
+
   @HostListener('window:scroll')
   onWindowScroll() {
     if (window.scrollY <= NavbarComponent.TOP_THRESHOLD) {

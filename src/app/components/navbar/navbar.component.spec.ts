@@ -99,6 +99,49 @@ describe('NavbarComponent', () => {
     expect(component.activeSection()).toBe('#home');
   });
 
+  
+  function flagButtons() {
+    return fixture.debugElement.queryAll(By.css('button[type="button"]')).filter(b =>
+      b.nativeElement.getAttribute('aria-label') === 'Switch to English' ||
+      b.nativeElement.getAttribute('aria-label') === 'Cambiar a Español'
+    );
+  }
+
+  function activeFlagLabels(): string[] {
+    return flagButtons()
+      .filter(b => b.nativeElement.classList.contains('active'))
+      .map(b => b.nativeElement.getAttribute('aria-label'));
+  }
+
+  it('should mark only the English flag as active on initial load', () => {
+    expect(translation.language()).toBe('en');
+    const active = activeFlagLabels();
+    expect(active.length).toBe(2);
+    expect(active.every(label => label === 'Switch to English')).toBe(true);
+
+    const enButtons = flagButtons().filter(b => b.nativeElement.getAttribute('aria-label') === 'Switch to English');
+    const esButtons = flagButtons().filter(b => b.nativeElement.getAttribute('aria-label') === 'Cambiar a Español');
+    expect(enButtons.length).toBe(2);
+    expect(esButtons.length).toBe(2);
+    enButtons.forEach(b => expect(b.nativeElement.classList).toContain('active'));
+    esButtons.forEach(b => expect(b.nativeElement.classList).not.toContain('active'));
+  });
+
+  it('should move the active class to the Spanish flag after switching', () => {
+    component.setLanguage('es');
+    fixture.detectChanges();
+
+    expect(translation.language()).toBe('es');
+    const active = activeFlagLabels();
+    expect(active.length).toBe(2);
+    expect(active.every(label => label === 'Cambiar a Español')).toBe(true);
+
+    const enButtons = flagButtons().filter(b => b.nativeElement.getAttribute('aria-label') === 'Switch to English');
+    const esButtons = flagButtons().filter(b => b.nativeElement.getAttribute('aria-label') === 'Cambiar a Español');
+    enButtons.forEach(b => expect(b.nativeElement.classList).not.toContain('active'));
+    esButtons.forEach(b => expect(b.nativeElement.classList).toContain('active'));
+  });
+
   it('should switch language to Spanish via the language buttons', () => {
     const buttons = fixture.debugElement.queryAll(By.css('button[type="button"]'));
     const esButton = buttons.find(b => b.nativeElement.getAttribute('aria-label') === 'Cambiar a Español');
