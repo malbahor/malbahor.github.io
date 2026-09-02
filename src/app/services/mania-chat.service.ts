@@ -49,6 +49,8 @@ const FOLLOW_UP_PHRASES = [
 
 @Injectable({ providedIn: 'root' })
 export class ManiaChatService {
+  private static apiKeyOverride: string | null = null;
+
   private readonly http = inject(HttpClient);
   private readonly translation = inject(TranslationService);
 
@@ -56,6 +58,10 @@ export class ManiaChatService {
   readonly isLoading = signal(false);
   readonly hasMessages = computed(() => this.messages().length > 0);
   private readonly usedFacts = new Set<string>();
+
+  static setApiKeyOverride(value: string | null): void {
+    ManiaChatService.apiKeyOverride = value;
+  }
 
   async sendMessage(content: string): Promise<void> {
     const trimmed = content.trim();
@@ -83,8 +89,9 @@ export class ManiaChatService {
 
   async generateDynamicResponse(userQuery: string, lang: 'es' | 'en'): Promise<string> {
     const normalized = userQuery.toLowerCase();
+    const apiKey = ManiaChatService.apiKeyOverride ?? MANIA_API_KEY;
 
-    if (MANIA_API_KEY) {
+    if (apiKey) {
       try {
         return await this.requestCompletion(userQuery, lang);
       } catch {
@@ -96,6 +103,7 @@ export class ManiaChatService {
   }
 
   private requestCompletion(userQuery: string, lang: 'es' | 'en'): Promise<string> {
+    const apiKey = ManiaChatService.apiKeyOverride ?? MANIA_API_KEY;
     const systemPrompt = this.buildSystemPrompt(lang);
     return firstValueFrom(
       this.http.post<{ choices?: { message?: { content?: string } }[] }>(
@@ -109,7 +117,7 @@ export class ManiaChatService {
           ],
           temperature: 0.7
         },
-        { headers: new HttpHeaders({ Authorization: `Bearer ${MANIA_API_KEY}` }) }
+        { headers: new HttpHeaders({ Authorization: `Bearer ${apiKey}` }) }
       ).pipe(delay(1000))
     ).then(res => {
       const content = res.choices?.[0]?.message?.content;
@@ -174,8 +182,29 @@ export class ManiaChatService {
       return this.buildIntentAnswer(intent, query, lang);
     }
 
+    if (this.isRoleFollowUp(query)) {
+      return this.buildCurrentRoleAnswer(lang);
+    }
+
     const fact = this.pickUnshownFact(lang);
     return fact[lang];
+  }
+
+  private isRoleFollowUp(query: string): boolean {
+    const normalized = this.normalizeText(query);
+    return (
+      normalized.includes('actualmente') ||
+      normalized.includes('currently') ||
+      normalized.includes('donde trabaja') ||
+      normalized.includes('where does he work')
+    );
+  }
+
+  private buildCurrentRoleAnswer(lang: 'es' | 'en'): string {
+    const role = MANUEL_CV_DATA.experience[0];
+    return lang === 'es'
+      ? `Actualmente se desempeña como ${role.title.es} en ${role.company} (${role.period.es}).`
+      : `He currently works as a ${role.title.en} at ${role.company} (${role.period.en}).`;
   }
 
   private pickUnshownFact(lang: 'es' | 'en'): { es: string; en: string } {
@@ -193,10 +222,14 @@ export class ManiaChatService {
     ];
 
     const fresh = pool.filter(fact => !this.usedFacts.has(fact[lang]));
-    const source = fresh.length > 0 ? fresh : pool;
-    const fact = this.pickRandom(source);
+    if (fresh.length > 0) {
+      const fact = this.pickRandom(fresh);
+      this.usedFacts.add(fact[lang]);
+      return fact;
+    }
 
     this.usedFacts.clear();
+    const fact = this.pickRandom(pool);
     this.usedFacts.add(fact[lang]);
     return fact;
   }
@@ -219,7 +252,8 @@ export class ManiaChatService {
       return false;
     }
 
-    const aliases = [...MANUEL_CV_DATA.aliases.es, ...MANUEL_CV_DATA.aliases.en];
+    const aliases = [...MANUEL_CV_DATA.aliases.es, ...MANUEL_CV_DATA.aliases.en]
+      .filter(alias => alias.trim().length >= 3);
     const aliasHits = aliases.some(alias =>
       tokens.some(token => this.stemsMatch(token, this.normalizeText(alias)))
     );
@@ -271,7 +305,11 @@ export class ManiaChatService {
       return true;
     }
     const minStem = Math.min(4, Math.max(3, Math.floor(term.length * 0.6)));
-    return term.startsWith(token.slice(0, minStem)) || token.startsWith(term.slice(0, minStem));
+    const tokenStem = token.slice(0, minStem);
+    if (tokenStem.length < 3) {
+      return false;
+    }
+    return term.startsWith(tokenStem) || token.startsWith(term.slice(0, minStem));
   }
 
   private composeDynamicAnswer(query: string, lang: 'es' | 'en'): string {
