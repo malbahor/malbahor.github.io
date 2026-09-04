@@ -17,7 +17,7 @@
 
 @if (isOpen()) {
   <section
-    class="fixed bottom-20 left-5 z-50 w-[calc(100vw-2.5rem)] max-w-sm rounded-2xl border border-slate-800 bg-slate-950/95 backdrop-blur-xl shadow-2xl shadow-black/40 flex flex-col overflow-hidden"
+    class="mania-panel fixed bottom-20 left-5 z-50 w-[calc(100vw-2.5rem)] max-w-sm rounded-2xl border border-slate-800 bg-slate-950/95 backdrop-blur-xl shadow-2xl shadow-black/40 flex flex-col overflow-hidden"
     role="dialog"
     aria-label="ManIA"
   >
@@ -81,7 +81,11 @@
               ? 'max-w-[85%] rounded-xl rounded-tl-sm bg-slate-900/70 px-3.5 py-2.5 text-[13px] leading-relaxed text-slate-300'
               : 'max-w-[85%] rounded-xl rounded-tr-sm bg-cyan-500/15 border border-cyan-500/20 px-3.5 py-2.5 text-[13px] leading-relaxed text-slate-100'"
           >
-            {{ message.content }}
+            @if (message.role === 'assistant') {
+              <span [innerHTML]="message.content | safeHtml"></span>
+            } @else {
+              {{ message.content }}
+            }
           </p>
         </div>
       }
@@ -106,7 +110,7 @@
           [(ngModel)]="draft"
           [placeholder]="data().mania.messagePlaceholder"
           [attr.aria-label]="data().mania.messagePlaceholder"
-          class="flex-1 rounded-lg border border-slate-800 bg-slate-950 px-3 py-2 text-sm text-slate-100 placeholder-slate-500 focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 transition-all"
+          class="mania-input flex-1 rounded-lg border border-slate-800 bg-slate-950 px-3 py-2 text-sm text-slate-100 placeholder-slate-500 focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 transition-all"
         />
         <button
           type="submit"

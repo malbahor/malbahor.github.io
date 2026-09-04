@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { useTranslation } from '../../services/translation.service';
+import { replaceYearsPlaceholder } from '../../core/data/cv-data';
 
 @Component({
   selector: 'app-experience',
@@ -9,5 +10,6 @@ import { useTranslation } from '../../services/translation.service';
 })
 export class ExperienceComponent {
   readonly data = useTranslation().data;
+  readonly resolveText = replaceYearsPlaceholder;
 }
 

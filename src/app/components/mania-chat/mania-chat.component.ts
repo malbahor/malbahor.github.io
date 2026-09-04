@@ -2,10 +2,11 @@ import { Component, ElementRef, computed, effect, inject, signal, viewChild } fr
 import { FormsModule } from '@angular/forms';
 import { ManiaChatService } from '../../services/mania-chat.service';
 import { useTranslation } from '../../services/translation.service';
+import { SafeHtmlPipe } from '../../shared/pipes/safe-html.pipe';
 
 @Component({
   selector: 'app-mania-chat',
-  imports: [FormsModule],
+  imports: [FormsModule, SafeHtmlPipe],
   templateUrl: './mania-chat.component.html',
   styleUrl: './mania-chat.component.scss'
 })
@@ -35,17 +36,19 @@ export class ManiaChatComponent {
   private static readonly QUICK_CLICK_THRESHOLD_MS = 300;
 
   private readonly messagesContainer = viewChild<ElementRef<HTMLDivElement>>('messagesContainer');
+  private lastScrollCount = -1;
 
   constructor() {
     effect(() => {
-      this.messages();
-      this.isLoading();
+      const count = this.messages().length;
+      const loading = this.isLoading();
       const container = this.messagesContainer()?.nativeElement;
-      if (container) {
+      if (container && (count > this.lastScrollCount || (loading && count === this.lastScrollCount))) {
         queueMicrotask(() => {
           container.scrollTop = container.scrollHeight;
         });
       }
+      this.lastScrollCount = count;
     });
   }
 

@@ -21,6 +21,10 @@ describe('NavbarComponent', () => {
     fixture.detectChanges();
   });
 
+  afterEach(() => {
+    jest.restoreAllMocks();
+  });
+
   it('should create', () => {
     expect(component).toBeTruthy();
   });
@@ -77,26 +81,52 @@ describe('NavbarComponent', () => {
   });
 
   it('should set active section based on scroll position', () => {
-    const sections: Record<string, { offsetTop: number }> = {
-      home: { offsetTop: 0 },
-      about: { offsetTop: 500 },
-      experience: { offsetTop: 1000 },
-      projects: { offsetTop: 1500 },
-      contact: { offsetTop: 2000 }
+    const layout: Record<string, { top: number; height: number }> = {
+      home: { top: 0, height: 1100 },
+      about: { top: 1100, height: 500 },
+      experience: { top: 1600, height: 500 },
+      projects: { top: 2100, height: 500 },
+      contact: { top: 2600, height: 500 }
     };
-    jest.spyOn(document, 'getElementById').mockImplementation((id: string) => sections[id] as unknown as HTMLElement);
+    jest.spyOn(document, 'getElementById').mockImplementation(
+      (id: string) => ({
+        getBoundingClientRect: () => {
+          const { top, height } = layout[id];
+          return { top: top - window.scrollY, bottom: top + height - window.scrollY };
+        }
+      }) as unknown as HTMLElement
+    );
+    Object.defineProperty(window, 'innerHeight', { value: 1000, configurable: true });
+    Object.defineProperty(document.documentElement, 'scrollHeight', { value: 20000, configurable: true });
+    Object.defineProperty(document.body, 'scrollHeight', { value: 20000, configurable: true });
 
-    Object.defineProperty(window, 'scrollY', { value: 600, configurable: true });
+    Object.defineProperty(window, 'scrollY', { value: 1000, configurable: true });
     component.onWindowScroll();
     expect(component.activeSection()).toBe('#about');
 
-    Object.defineProperty(window, 'scrollY', { value: 1600, configurable: true });
+    Object.defineProperty(window, 'scrollY', { value: 2000, configurable: true });
     component.onWindowScroll();
     expect(component.activeSection()).toBe('#projects');
 
     Object.defineProperty(window, 'scrollY', { value: 50, configurable: true });
     component.onWindowScroll();
     expect(component.activeSection()).toBe('#home');
+
+    Object.defineProperty(document.documentElement, 'scrollHeight', { value: 0, configurable: true });
+    Object.defineProperty(document.body, 'scrollHeight', { value: 0, configurable: true });
+  });
+
+  it('should mark contact as active when scrolled to the bottom of the page', () => {
+    Object.defineProperty(document.documentElement, 'scrollHeight', { value: 3000, configurable: true });
+    Object.defineProperty(document.body, 'scrollHeight', { value: 3000, configurable: true });
+    Object.defineProperty(window, 'innerHeight', { value: 800, configurable: true });
+    Object.defineProperty(window, 'scrollY', { value: 2400, configurable: true });
+
+    component.onWindowScroll();
+    expect(component.activeSection()).toBe('#contact');
+
+    Object.defineProperty(document.documentElement, 'scrollHeight', { value: 0, configurable: true });
+    Object.defineProperty(document.body, 'scrollHeight', { value: 0, configurable: true });
   });
 
   

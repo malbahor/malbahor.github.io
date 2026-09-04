@@ -3,7 +3,7 @@
     <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
       <span class="text-cyan-400 text-xs font-bold uppercase tracking-widest">{{ data().experience.eyebrow }}</span>
       <h2 class="text-3xl sm:text-4xl font-extrabold text-white">{{ data().experience.title }}</h2>
-      <p class="text-slate-400 text-sm sm:text-base">{{ data().experience.subtitle }}</p>
+      <p class="text-slate-400 text-sm sm:text-base">{{ resolveText(data().experience.subtitle) }}</p>
     </div>
 
     <div class="max-w-4xl mx-auto relative pl-6 sm:pl-8 border-l border-slate-800 space-y-12">
@@ -43,7 +43,7 @@
             <p class="text-slate-300 text-sm mb-4 leading-relaxed">{{ exp.description }}</p>
 
             <ul class="space-y-2 mb-6 text-xs sm:text-sm text-slate-300">
-              @for (item of exp.achievements; track item) {
+              @for (item of exp.achievements; track $index) {
                 <li class="flex items-start gap-2">
                   <span class="text-cyan-400 font-bold mt-0.5">▹</span>
                   <span>{{ item }}</span>

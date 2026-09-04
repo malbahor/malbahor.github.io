@@ -3,6 +3,7 @@ import { By } from '@angular/platform-browser';
 
 import { AboutComponent } from './about.component';
 import { TranslationService } from '../../services/translation.service';
+import { replaceYearsPlaceholder } from '../../core/data/cv-data';
 
 describe('AboutComponent', () => {
   let component: AboutComponent;
@@ -34,7 +35,7 @@ describe('AboutComponent', () => {
   it('should render the greeting card and paragraph without repeating the hero description', () => {
     const compiled = fixture.nativeElement as HTMLElement;
     expect(compiled.textContent).toContain(translation.data().about.greeting);
-    expect(compiled.textContent).toContain(translation.data().about.paragraph1);
+    expect(compiled.textContent).toContain(replaceYearsPlaceholder(translation.data().about.paragraph1));
   });
 
   it('should render skill categories', () => {
