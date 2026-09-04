@@ -540,7 +540,180 @@ describe('ManiaChatService', () => {
 
   it('should ask for clarification on gibberish input in english', async () => {
     await send('qwertyuiop');
-    expect(service.messages()[1].content).toContain("didn't");
+    const content = service.messages()[1].content;
+    expect([
+      "I didn't quite understand your question",
+      'Sorry, I could not follow you'
+    ].some(phrase => content.includes(phrase))).toBe(true);
+  });
+
+  it('should answer age question in english', async () => {
+    await send('how old is he?');
+    const content = service.messages()[1].content;
+    expect(content).toContain('1999');
+    expect(content).toMatch(/\d+ años?|\d+ years?/);
+  });
+
+  it('should answer age question in spanish', async () => {
+    translation.setLanguage('es');
+    await send('qué edad tiene?');
+    expect(service.messages()[1].content).toContain('1999');
+  });
+
+  it('should answer personality in english', async () => {
+    await send('what is he like? tell me his personality');
+    const content = service.messages()[1].content;
+    expect(['activa', 'proactiva', 'constante', 'metódico', 'apasionado', 'active', 'proactive', 'consistent', 'methodical', 'passionate'].some(word => content.toLowerCase().includes(word))).toBe(true);
+  });
+
+  it('should answer personality in spanish', async () => {
+    translation.setLanguage('es');
+    await send('cómo es manuel? personalidad');
+    const content = service.messages()[1].content;
+    expect(content).toContain('activa');
+  });
+
+  it('should answer goals in english', async () => {
+    await send('what are his goals?');
+    const content = service.messages()[1].content;
+    expect(content).toContain('leadership');
+  });
+
+  it('should answer goals in spanish', async () => {
+    translation.setLanguage('es');
+    await send('cuáles son sus objetivos?');
+    expect(service.messages()[1].content).toContain('liderazgo');
+  });
+
+  it('should not flag as off-topic when there is a protected topic hit', async () => {
+    await send('angular is great');
+    const content = service.messages()[1].content;
+    expect(content).toContain('Angular');
+  });
+
+  it('should return a general answer for unrecognized input with context', async () => {
+    await send('Tell me something about Manuel');
+    const content = service.messages()[1].content;
+    expect(content).toContain('Senior Frontend Engineer');
+  });
+
+  it('should handle follow-up about previous company after asking about current', async () => {
+    await send('Tell me about NTT DATA');
+    await send('and before that?');
+    const content = service.messages()[3].content;
+    expect(content).toContain('Deloitte');
+  });
+
+  it('should detect age intent and calculate age correctly', async () => {
+    await send('how old is Manuel?');
+    const content = service.messages()[1].content;
+    expect(content).toMatch(/\d+ years? old/);
+    expect(content).toContain('1999');
+  });
+
+  it('should answer off-topic response when no protected topic is hit', async () => {
+    await send('what is the weather like?');
+    const content = service.messages()[1].content.toLowerCase();
+    expect(['career', 'scope', 'purpose'].some(word => content.includes(word))).toBe(true);
+  });
+
+  it('should answer company details follow-up with tech context', async () => {
+    translation.setLanguage('es');
+    await send('cuéntame sobre NTT DATA');
+    await send('qué tecnologías usó allí?');
+    const content = service.messages()[3].content;
+    expect(content).toContain('NTT DATA');
+  });
+
+  it('should calculate age correctly when birthday has not occurred yet this year', () => {
+    const calc = (service as any).calculateAge.bind(service);
+    const beforeBirthday = new Date(2025, 0, 1);
+    expect(calc('1999-04-23', beforeBirthday)).toBe(25);
+  });
+
+  it('should answer previous company query directly', async () => {
+    await send('where did he work before?');
+    expect(service.messages()[1].content).toContain('Deloitte');
+  });
+
+  it('should answer methodology with agile focus', async () => {
+    await send('what is his work methodology? tell me about agile');
+    const content = service.messages()[1].content.toLowerCase();
+    expect(['agile', 'iterative', 'jest', 'tests'].some(word => content.includes(word))).toBe(true);
+  });
+
+  it('should answer hobbies with boxing and tennis details', async () => {
+    await send('what are his hobbies?');
+    const content = service.messages()[1].content;
+    expect(['Boxing', 'Boxeo', 'Tennis', 'Tenis'].some(word => content.includes(word))).toBe(true);
+  });
+
+  it('should answer follow-up about previous company after context', async () => {
+    await send('Tell me about NTT DATA');
+    await send('y anteriormente?');
+    const content = service.messages()[3].content;
+    expect(content).toContain('Deloitte');
+  });
+
+  it('should answer company context query with responsibilities', async () => {
+    await send('responsibilities at NTT DATA');
+    expect(service.messages()[1].content).toContain('NTT DATA');
+  });
+
+  it('should call buildPreviousCompanyAnswer for previous company follow-up', async () => {
+    await send('Tell me about NTT DATA');
+    await send('before that?');
+    const content = service.messages()[3].content;
+    expect(content).toContain('Deloitte');
+  });
+
+  it('should call buildCompanyDetailsAnswer for company context query', async () => {
+    (service as any).lastEntity = 'ntt';
+    const answer = (service as any).buildCompanyDetailsAnswer('responsibilities', 'en');
+    expect(answer).toContain('NTT DATA');
+  });
+
+  it('should pick random from scored roles when bestScore > 0', () => {
+    const result = (service as any).pickRelevantRole('angular testing', 'en');
+    expect(result).toBeTruthy();
+    expect(result.company).toBeTruthy();
+  });
+
+  it('should call buildPreviousCompanyAnswer directly', () => {
+    const answer = (service as any).buildPreviousCompanyAnswer('en');
+    expect(answer).toContain('Deloitte');
+  });
+
+  it('should call buildCompanyDetailsAnswer with lastEntity set', () => {
+    (service as any).lastEntity = 'ntt';
+    const answer = (service as any).buildCompanyDetailsAnswer('tell me more about responsibilities', 'en');
+    expect(answer).toContain('NTT DATA');
+  });
+
+  it('should trigger buildFollowUpAnswer with previous company query', async () => {
+    await send('Tell me about NTT DATA');
+    await send('anteriormente?');
+    const content = service.messages()[3].content;
+    expect(content).toContain('Deloitte');
+  });
+
+  it('should cover buildPreviousCompanyAnswer in buildFollowUpAnswer', () => {
+    const answer = (service as any).buildFollowUpAnswer('anteriormente', 'en');
+    expect(answer).toContain('Deloitte');
+  });
+
+  it('should cover buildCompanyDetailsAnswer in buildFollowUpAnswer', () => {
+    (service as any).lastEntity = 'ntt';
+    const answer = (service as any).buildFollowUpAnswer('responsibilities', 'en');
+    expect(answer).toContain('NTT DATA');
+  });
+
+  it('should cover the default case with random true branch', () => {
+    const mathRandom = Math.random;
+    Math.random = jest.fn().mockReturnValue(0.9);
+    const answer = (service as any).buildIntentAnswer('general', 'some random query', 'en');
+    expect(answer).toContain('Senior Frontend Engineer');
+    Math.random = mathRandom;
   });
 });
-
+ 

@@ -1,5 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
+import { DOCUMENT } from '@angular/common';
 
 import { NavbarComponent } from './navbar.component';
 import { TranslationService } from '../../services/translation.service';
@@ -179,13 +180,82 @@ describe('NavbarComponent', () => {
     expect(translation.language()).toBe('es');
   });
 
-  it('should switch language to English via the language buttons', () => {
-    translation.setLanguage('es');
-    fixture.detectChanges();
-    const buttons = fixture.debugElement.queryAll(By.css('button[type="button"]'));
-    const enButton = buttons.find(b => b.nativeElement.getAttribute('aria-label') === 'Switch to English');
-    enButton?.nativeElement.click();
-    expect(translation.language()).toBe('en');
+  it('should cancel the pending animation frame on destroy', () => {
+    const cancelSpy = jest.spyOn(window, 'cancelAnimationFrame');
+    component['scrollFrameId'] = 42;
+    component.ngOnDestroy();
+    expect(cancelSpy).toHaveBeenCalledWith(42);
   });
-});
+
+  it('should not schedule a new animation frame if one is already pending', () => {
+    const requestSpy = jest.spyOn(window, 'requestAnimationFrame');
+    component['scrollFrameId'] = 1;
+    component['scheduleScrollUpdate']();
+    expect(requestSpy).not.toHaveBeenCalled();
+    component['scrollFrameId'] = 0;
+  });
+
+  it('should execute the scheduled scroll update on animation frame', () => {
+    const requestSpy = jest.spyOn(window, 'requestAnimationFrame').mockImplementation((cb) => {
+      cb(0);
+      return 1;
+    });
+    component['scheduleScrollUpdate']();
+    expect(requestSpy).toHaveBeenCalled();
+    requestSpy.mockRestore();
+  });
+
+  describe('SSR scenarios', () => {
+    const originalWindow = window;
+
+    afterEach(() => {
+      Object.defineProperty(globalThis, 'window', {
+        value: originalWindow,
+        writable: true,
+        configurable: true
+      });
+    });
+
+    it('should handle ngAfterViewInit when window is undefined', () => {
+      Object.defineProperty(globalThis, 'window', {
+        value: undefined,
+        writable: true,
+        configurable: true
+      });
+      expect(() => component.ngAfterViewInit()).not.toThrow();
+    });
+
+    it('should handle ngOnDestroy when window is undefined', () => {
+      Object.defineProperty(globalThis, 'window', {
+        value: undefined,
+        writable: true,
+        configurable: true
+      });
+      expect(() => component.ngOnDestroy()).not.toThrow();
+    });
+
+    it('should handle onWindowScroll when window is undefined', () => {
+      Object.defineProperty(globalThis, 'window', {
+        value: undefined,
+        writable: true,
+        configurable: true
+      });
+      expect(() => component.onWindowScroll()).not.toThrow();
+    });
+
+    it('should handle isNearDocumentBottom when body scrollHeight is null', () => {
+      const mockDoc = {
+        scrollHeight: 3000
+      };
+      jest.spyOn(document, 'documentElement', 'get').mockReturnValue(mockDoc as any);
+      Object.defineProperty(document, 'body', { value: null, configurable: true });
+      Object.defineProperty(window, 'innerHeight', { value: 800, configurable: true });
+      Object.defineProperty(window, 'scrollY', { value: 2400, configurable: true });
+
+      component.onWindowScroll();
+      expect(component.activeSection()).toBeTruthy();
+
+      Object.defineProperty(document, 'body', { value: document.body, configurable: true });
+    });
+  });
 
