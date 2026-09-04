@@ -51,7 +51,7 @@
       "closeAria": "Cerrar diálogo"
     },
     "stats": [
-      { "label": "Años de experiencia", "value": "5+" },
+      { "label": "Años de experiencia", "value": "{years}+" },
       { "label": "Empresa actual", "value": "NTT DATA" },
       { "label": "Sectores", "value": "Financiero y Seguros" },
       { "label": "Ubicación", "value": "Sevilla, ES" }
@@ -62,7 +62,7 @@
     "title": "Arquitectura frontend escalable para sectores exigentes",
     "subtitle": "Angular, TypeScript y RxJS aplicados a financiero y seguros, potenciados con desarrollo asistido por IA",
     "greeting": "Perfil Profesional & Enfoque Técnico",
-    "paragraph1": "Más de 5 años diseñando e implementando aplicaciones web críticas en sectores de alta regulación como banca e inversión. Mi foco está en la creación de arquitecturas modulares, optimización de rendimiento y buenas prácticas de código. Apasionado por la integración de herramientas de Inteligencia Artificial en el flujo de desarrollo para maximizar la productividad y entregar productos robustos en plazos ajustados.",
+    "paragraph1": "Más de {years} años diseñando e implementando aplicaciones web críticas en sectores de alta regulación como banca e inversión. Mi foco está en la creación de arquitecturas modulares, optimización de rendimiento y buenas prácticas de código. Apasionado por la integración de herramientas de Inteligencia Artificial en el flujo de desarrollo para maximizar la productividad y entregar productos robustos en plazos ajustados.",
     "tags": ["#Angular", "#TypeScript", "#RxJS", "#CleanArchitecture"],
     "skillCategories": [
       {
@@ -102,7 +102,7 @@
   "experience": {
     "eyebrow": "Trayectoria",
     "title": "Experiencia Laboral",
-    "subtitle": "Más de 5 años entregando soluciones frontend en entornos empresariales",
+    "subtitle": "Más de {years} años entregando soluciones frontend en entornos empresariales",
     "currentBadge": "Actual",
     "experiences": [
       {
@@ -112,13 +112,15 @@
         "period": "07/2024 - Presente",
         "location": "Sevilla, España",
         "isCurrent": true,
-        "description": "Liderazgo de la arquitectura y desarrollo frontend con Angular en aplicaciones financieras enterprise.",
+        "description": "Liderazgo de la arquitectura frontend con Angular 18 en aplicaciones financieras enterprise, definiendo patrones de diseño, buenas prácticas y guía técnica del equipo frontend.",
         "achievements": [
-          "Referente técnico del equipo frontend y coordinación de requerimientos con backend y cliente.",
-          "Gestión e integración de pipelines de despliegue automatizado con Jenkins (CI/CD).",
-          "Cobertura de tests unitarios con Jest e integración de REST APIs con MongoDB."
+          "Liderazgo técnico de la arquitectura frontend con Angular 18 en aplicaciones financieras enterprise.",
+          "Definición de patrones de diseño, buenas prácticas y guía técnica para el equipo frontend.",
+          "Coordinación de requerimientos funcionales y técnicos con equipos backend y cliente.",
+          "Automatización de despliegues y pipelines de CI/CD con Jenkins.",
+          "Cobertura de tests unitarios con Jest y validación e integración de APIs REST complejas con Postman y MongoDB."
         ],
-        "technologies": ["Angular", "TypeScript", "RxJS", "Jenkins", "Jest", "MongoDB"]
+        "technologies": ["Angular", "TypeScript", "RxJS", "Jenkins", "Jest", "Postman", "MongoDB"]
       },
       {
         "id": "deloitte",
@@ -127,12 +129,14 @@
         "period": "09/2020 - 06/2024",
         "location": "Sevilla, España",
         "isCurrent": false,
-        "description": "Desarrollo de interfaces web responsive con Angular e Ionic para Administración Pública, Sector Financiero y Transporte.",
+        "description": "Desarrollo y optimización de interfaces web responsive con Angular e Ionic para Administración Pública, Sector Financiero y Transporte, y una librería centralizada de componentes UI reutilizables documentada con Storybook.",
         "achievements": [
-          "Creación y mantenimiento de la librería centralizada de componentes UI reutilizables documentada en Storybook.",
-          "Apoyo full-stack en desarrollo y mantenimiento backend utilizando Java y MySQL."
+          "Desarrollo y optimización de interfaces web responsive con Angular e Ionic para Administración Pública, Sector Financiero y Transporte.",
+          "Diseño, desarrollo y mantenimiento de una librería centralizada de componentes UI reutilizables documentada con Storybook.",
+          "Participación activa en entornos ágiles (Scrum) traduciendo diseños UI a código funcional.",
+          "Soporte full-stack con Java y MySQL para desarrollo de funcionalidades backend en equipos de mejoras."
         ],
-        "technologies": ["Angular", "Ionic", "Storybook", "SCSS", "Java", "MySQL"]
+        "technologies": ["Angular", "Ionic", "Storybook", "SCSS", "Scrum", "Java", "MySQL"]
       }
     ]
   },

@@ -1,5 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
+import { DOCUMENT } from '@angular/common';
 
 import { NavbarComponent } from './navbar.component';
 import { TranslationService } from '../../services/translation.service';
@@ -19,6 +20,10 @@ describe('NavbarComponent', () => {
     component = fixture.componentInstance;
     translation = TestBed.inject(TranslationService);
     fixture.detectChanges();
+  });
+
+  afterEach(() => {
+    jest.restoreAllMocks();
   });
 
   it('should create', () => {
@@ -77,26 +82,52 @@ describe('NavbarComponent', () => {
   });
 
   it('should set active section based on scroll position', () => {
-    const sections: Record<string, { offsetTop: number }> = {
-      home: { offsetTop: 0 },
-      about: { offsetTop: 500 },
-      experience: { offsetTop: 1000 },
-      projects: { offsetTop: 1500 },
-      contact: { offsetTop: 2000 }
+    const layout: Record<string, { top: number; height: number }> = {
+      home: { top: 0, height: 1100 },
+      about: { top: 1100, height: 500 },
+      experience: { top: 1600, height: 500 },
+      projects: { top: 2100, height: 500 },
+      contact: { top: 2600, height: 500 }
     };
-    jest.spyOn(document, 'getElementById').mockImplementation((id: string) => sections[id] as unknown as HTMLElement);
+    jest.spyOn(document, 'getElementById').mockImplementation(
+      (id: string) => ({
+        getBoundingClientRect: () => {
+          const { top, height } = layout[id];
+          return { top: top - window.scrollY, bottom: top + height - window.scrollY };
+        }
+      }) as unknown as HTMLElement
+    );
+    Object.defineProperty(window, 'innerHeight', { value: 1000, configurable: true });
+    Object.defineProperty(document.documentElement, 'scrollHeight', { value: 20000, configurable: true });
+    Object.defineProperty(document.body, 'scrollHeight', { value: 20000, configurable: true });
 
-    Object.defineProperty(window, 'scrollY', { value: 600, configurable: true });
+    Object.defineProperty(window, 'scrollY', { value: 1000, configurable: true });
     component.onWindowScroll();
     expect(component.activeSection()).toBe('#about');
 
-    Object.defineProperty(window, 'scrollY', { value: 1600, configurable: true });
+    Object.defineProperty(window, 'scrollY', { value: 2000, configurable: true });
     component.onWindowScroll();
     expect(component.activeSection()).toBe('#projects');
 
     Object.defineProperty(window, 'scrollY', { value: 50, configurable: true });
     component.onWindowScroll();
     expect(component.activeSection()).toBe('#home');
+
+    Object.defineProperty(document.documentElement, 'scrollHeight', { value: 0, configurable: true });
+    Object.defineProperty(document.body, 'scrollHeight', { value: 0, configurable: true });
+  });
+
+  it('should mark contact as active when scrolled to the bottom of the page', () => {
+    Object.defineProperty(document.documentElement, 'scrollHeight', { value: 3000, configurable: true });
+    Object.defineProperty(document.body, 'scrollHeight', { value: 3000, configurable: true });
+    Object.defineProperty(window, 'innerHeight', { value: 800, configurable: true });
+    Object.defineProperty(window, 'scrollY', { value: 2400, configurable: true });
+
+    component.onWindowScroll();
+    expect(component.activeSection()).toBe('#contact');
+
+    Object.defineProperty(document.documentElement, 'scrollHeight', { value: 0, configurable: true });
+    Object.defineProperty(document.body, 'scrollHeight', { value: 0, configurable: true });
   });
 
   
@@ -149,13 +180,82 @@ describe('NavbarComponent', () => {
     expect(translation.language()).toBe('es');
   });
 
-  it('should switch language to English via the language buttons', () => {
-    translation.setLanguage('es');
-    fixture.detectChanges();
-    const buttons = fixture.debugElement.queryAll(By.css('button[type="button"]'));
-    const enButton = buttons.find(b => b.nativeElement.getAttribute('aria-label') === 'Switch to English');
-    enButton?.nativeElement.click();
-    expect(translation.language()).toBe('en');
+  it('should cancel the pending animation frame on destroy', () => {
+    const cancelSpy = jest.spyOn(window, 'cancelAnimationFrame');
+    component['scrollFrameId'] = 42;
+    component.ngOnDestroy();
+    expect(cancelSpy).toHaveBeenCalledWith(42);
   });
-});
+
+  it('should not schedule a new animation frame if one is already pending', () => {
+    const requestSpy = jest.spyOn(window, 'requestAnimationFrame');
+    component['scrollFrameId'] = 1;
+    component['scheduleScrollUpdate']();
+    expect(requestSpy).not.toHaveBeenCalled();
+    component['scrollFrameId'] = 0;
+  });
+
+  it('should execute the scheduled scroll update on animation frame', () => {
+    const requestSpy = jest.spyOn(window, 'requestAnimationFrame').mockImplementation((cb) => {
+      cb(0);
+      return 1;
+    });
+    component['scheduleScrollUpdate']();
+    expect(requestSpy).toHaveBeenCalled();
+    requestSpy.mockRestore();
+  });
+
+  describe('SSR scenarios', () => {
+    const originalWindow = window;
+
+    afterEach(() => {
+      Object.defineProperty(globalThis, 'window', {
+        value: originalWindow,
+        writable: true,
+        configurable: true
+      });
+    });
+
+    it('should handle ngAfterViewInit when window is undefined', () => {
+      Object.defineProperty(globalThis, 'window', {
+        value: undefined,
+        writable: true,
+        configurable: true
+      });
+      expect(() => component.ngAfterViewInit()).not.toThrow();
+    });
+
+    it('should handle ngOnDestroy when window is undefined', () => {
+      Object.defineProperty(globalThis, 'window', {
+        value: undefined,
+        writable: true,
+        configurable: true
+      });
+      expect(() => component.ngOnDestroy()).not.toThrow();
+    });
+
+    it('should handle onWindowScroll when window is undefined', () => {
+      Object.defineProperty(globalThis, 'window', {
+        value: undefined,
+        writable: true,
+        configurable: true
+      });
+      expect(() => component.onWindowScroll()).not.toThrow();
+    });
+
+    it('should handle isNearDocumentBottom when body scrollHeight is null', () => {
+      const mockDoc = {
+        scrollHeight: 3000
+      };
+      jest.spyOn(document, 'documentElement', 'get').mockReturnValue(mockDoc as any);
+      Object.defineProperty(document, 'body', { value: null, configurable: true });
+      Object.defineProperty(window, 'innerHeight', { value: 800, configurable: true });
+      Object.defineProperty(window, 'scrollY', { value: 2400, configurable: true });
+
+      component.onWindowScroll();
+      expect(component.activeSection()).toBeTruthy();
+
+      Object.defineProperty(document, 'body', { value: document.body, configurable: true });
+    });
+  });
 

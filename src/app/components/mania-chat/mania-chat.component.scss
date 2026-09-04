@@ -134,3 +134,25 @@
 .messages-scroll::-webkit-scrollbar-thumb:hover {
   background: rgba(34, 211, 238, 0.55);
 }
+
+.mania-input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+:host .mania-input {
+  font-size: 16px;
+}
+
+@media (max-width: 767px) {
+  :host .mania-panel {
+    position: fixed;
+    left: 0.625rem;
+    bottom: 0;
+    z-index: 50;
+    width: calc(100vw - 1.25rem);
+    max-width: 24rem;
+    max-height: 100dvh;
+  }
+}

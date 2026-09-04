@@ -51,7 +51,7 @@
       "closeAria": "Close dialog"
     },
     "stats": [
-      { "label": "Years of Experience", "value": "5+" },
+      { "label": "Years of Experience", "value": "{years}+" },
       { "label": "Current Company", "value": "NTT DATA" },
       { "label": "Sectors", "value": "Finance & Insurance" },
       { "label": "Based in", "value": "Seville, ES" }
@@ -62,7 +62,7 @@
     "title": "Scalable frontend architecture for demanding sectors",
     "subtitle": "Angular, TypeScript and RxJS applied to finance and insurance, boosted with AI-driven development",
     "greeting": "Professional Profile & Technical Approach",
-    "paragraph1": "5+ years building critical web applications for highly regulated industries like banking and insurance. I specialize in scalable modular architectures, performance optimization, and clean code standards. Passionate about leveraging AI tooling in development workflows to boost efficiency and deliver robust enterprise software on tight deadlines.",
+    "paragraph1": "{years}+ years building critical web applications for highly regulated industries like banking and insurance. I specialize in scalable modular architectures, performance optimization, and clean code standards. Passionate about leveraging AI tooling in development workflows to boost efficiency and deliver robust enterprise software on tight deadlines.",
     "tags": ["#Angular", "#TypeScript", "#RxJS", "#CleanArchitecture"],
     "skillCategories": [
       {
@@ -102,7 +102,7 @@
   "experience": {
     "eyebrow": "Career",
     "title": "Work Experience",
-    "subtitle": "5+ years delivering frontend solutions in enterprise environments",
+    "subtitle": "{years}+ years delivering frontend solutions in enterprise environments",
     "currentBadge": "Current",
     "experiences": [
       {
@@ -112,13 +112,15 @@
         "period": "07/2024 - Present",
         "location": "Seville, Spain",
         "isCurrent": true,
-        "description": "Frontend architecture and development leadership with Angular for enterprise financial applications.",
+        "description": "Frontend architecture leadership with Angular 18 on enterprise financial applications, defining design patterns, best practices and technical guidance for the frontend team.",
         "achievements": [
-          "Technical reference for the frontend team and coordination of requirements with backend and client.",
-          "Management and integration of automated deployment pipelines with Jenkins (CI/CD).",
-          "Unit test coverage with Jest and integration of REST APIs backed by MongoDB."
+          "Technical leadership of the frontend architecture with Angular 18 on enterprise financial applications.",
+          "Definition of design patterns, best practices and technical guidance for the frontend team.",
+          "Coordination of functional and technical requirements with backend teams and the client.",
+          "Automation of deployments and CI/CD pipelines with Jenkins.",
+          "Unit test coverage with Jest and validation and integration of complex REST APIs with Postman and MongoDB."
         ],
-        "technologies": ["Angular", "TypeScript", "RxJS", "Jenkins", "Jest", "MongoDB"]
+        "technologies": ["Angular", "TypeScript", "RxJS", "Jenkins", "Jest", "Postman", "MongoDB"]
       },
       {
         "id": "deloitte",
@@ -127,12 +129,14 @@
         "period": "09/2020 - 06/2024",
         "location": "Seville, Spain",
         "isCurrent": false,
-        "description": "Development of responsive web interfaces with Angular and Ionic for Public Administration, Finance and Transport.",
+        "description": "Development and optimization of responsive web interfaces with Angular and Ionic for Public Administration, Finance and Transport, plus a centralized reusable UI component library documented with Storybook.",
         "achievements": [
-          "Creation and maintenance of the centralized reusable UI component library documented with Storybook.",
-          "Full-stack support in backend development and maintenance using Java and MySQL."
+          "Development and optimization of responsive web interfaces with Angular and Ionic for Public Administration, Finance and Transport.",
+          "Design, development and maintenance of a centralized reusable UI component library documented with Storybook.",
+          "Active participation in agile environments (Scrum), translating UI designs into functional code.",
+          "Full-stack support with Java and MySQL for backend feature development on improvement teams."
         ],
-        "technologies": ["Angular", "Ionic", "Storybook", "SCSS", "Java", "MySQL"]
+        "technologies": ["Angular", "Ionic", "Storybook", "SCSS", "Scrum", "Java", "MySQL"]
       }
     ]
   },
