@@ -11,11 +11,13 @@ import { useTranslation, type Language } from '../../services/translation.servic
 export class NavbarComponent implements AfterViewInit, OnDestroy {
   private static readonly VIEWPORT_ANCHOR_RATIO = 0.3;
   private static readonly BOTTOM_TOLERANCE = 20;
+  private static readonly SCROLL_INIT_GRACE_MS = 300;
   private readonly translation = useTranslation();
   private readonly document = inject(DOCUMENT);
   private readonly zone = inject(NgZone);
   private scrollFrameId = 0;
   private readonly handleScrollEvent = (): void => this.scheduleScrollUpdate();
+  private initializedAt = 0;
   readonly data = this.translation.data;
   readonly language = this.translation.language;
   readonly activeSection = signal('#home');
@@ -33,7 +35,8 @@ export class NavbarComponent implements AfterViewInit, OnDestroy {
       window.addEventListener('scroll', this.handleScrollEvent, { passive: true });
       window.addEventListener('resize', this.handleScrollEvent, { passive: true });
     });
-    this.onWindowScroll();
+    this.initializedAt = Date.now();
+    window.scrollTo({ top: 0, behavior: 'instant' });
   }
 
   ngOnDestroy(): void {
@@ -50,6 +53,9 @@ export class NavbarComponent implements AfterViewInit, OnDestroy {
 
   onWindowScroll(): void {
     if (typeof window === 'undefined') {
+      return;
+    }
+    if (Date.now() - this.initializedAt < NavbarComponent.SCROLL_INIT_GRACE_MS) {
       return;
     }
     if (this.isNearDocumentBottom()) {

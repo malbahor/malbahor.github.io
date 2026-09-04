@@ -10,7 +10,7 @@ describe('NavbarComponent', () => {
   let fixture: ComponentFixture<NavbarComponent>;
   let translation: TranslationService;
 
-  beforeEach(async () => {
+        beforeEach(async () => {
     localStorage.removeItem('lang');
     await TestBed.configureTestingModule({
       imports: [NavbarComponent]
@@ -22,7 +22,7 @@ describe('NavbarComponent', () => {
     fixture.detectChanges();
   });
 
-  afterEach(() => {
+    afterEach(() => {
     jest.restoreAllMocks();
   });
 
@@ -81,7 +81,12 @@ describe('NavbarComponent', () => {
     expect(component.isMenuOpen()).toBe(false);
   });
 
-  it('should set active section based on scroll position', () => {
+    it('should set active section based on scroll position', () => {
+    jest.useFakeTimers();
+    const scrollToSpy = jest.spyOn(window, 'scrollTo').mockImplementation(() => {});
+    component.ngAfterViewInit();
+    jest.advanceTimersByTime(400);
+
     const layout: Record<string, { top: number; height: number }> = {
       home: { top: 0, height: 1100 },
       about: { top: 1100, height: 500 },
@@ -115,9 +120,15 @@ describe('NavbarComponent', () => {
 
     Object.defineProperty(document.documentElement, 'scrollHeight', { value: 0, configurable: true });
     Object.defineProperty(document.body, 'scrollHeight', { value: 0, configurable: true });
+    scrollToSpy.mockRestore();
   });
 
-  it('should mark contact as active when scrolled to the bottom of the page', () => {
+    it('should mark contact as active when scrolled to the bottom of the page', () => {
+    jest.useFakeTimers();
+    const scrollToSpy = jest.spyOn(window, 'scrollTo').mockImplementation(() => {});
+    component.ngAfterViewInit();
+    jest.advanceTimersByTime(400);
+
     Object.defineProperty(document.documentElement, 'scrollHeight', { value: 3000, configurable: true });
     Object.defineProperty(document.body, 'scrollHeight', { value: 3000, configurable: true });
     Object.defineProperty(window, 'innerHeight', { value: 800, configurable: true });
@@ -128,6 +139,7 @@ describe('NavbarComponent', () => {
 
     Object.defineProperty(document.documentElement, 'scrollHeight', { value: 0, configurable: true });
     Object.defineProperty(document.body, 'scrollHeight', { value: 0, configurable: true });
+    scrollToSpy.mockRestore();
   });
 
   
@@ -243,11 +255,12 @@ describe('NavbarComponent', () => {
       expect(() => component.onWindowScroll()).not.toThrow();
     });
 
-    it('should handle isNearDocumentBottom when body scrollHeight is null', () => {
+        it('should handle isNearDocumentBottom when body scrollHeight is null', () => {
       const mockDoc = {
         scrollHeight: 3000
       };
       jest.spyOn(document, 'documentElement', 'get').mockReturnValue(mockDoc as any);
+      const originalBody = document.body;
       Object.defineProperty(document, 'body', { value: null, configurable: true });
       Object.defineProperty(window, 'innerHeight', { value: 800, configurable: true });
       Object.defineProperty(window, 'scrollY', { value: 2400, configurable: true });
@@ -255,7 +268,33 @@ describe('NavbarComponent', () => {
       component.onWindowScroll();
       expect(component.activeSection()).toBeTruthy();
 
-      Object.defineProperty(document, 'body', { value: document.body, configurable: true });
+      Object.defineProperty(document, 'body', { value: originalBody, configurable: true });
     });
   });
 
+      describe('scroll initialization', () => {
+    it('should call window.scrollTo with top 0 on ngAfterViewInit', () => {
+      jest.useFakeTimers();
+      const scrollToSpy = jest.spyOn(window, 'scrollTo').mockImplementation(() => {});
+      component.ngAfterViewInit();
+      expect(scrollToSpy).toHaveBeenCalledWith({ top: 0, behavior: 'instant' });
+      scrollToSpy.mockRestore();
+      jest.useRealTimers();
+    });
+
+    it('should not update active section during grace period after initialization', () => {
+      jest.useFakeTimers();
+      const scrollToSpy = jest.spyOn(window, 'scrollTo').mockImplementation(() => {});
+      component.ngAfterViewInit();
+
+      Object.defineProperty(window, 'scrollY', { value: 2000, configurable: true });
+      component.onWindowScroll();
+
+      expect(component.activeSection()).toBe('#home');
+      scrollToSpy.mockRestore();
+      jest.useRealTimers();
+    });
+  });
+});
+
+ 
