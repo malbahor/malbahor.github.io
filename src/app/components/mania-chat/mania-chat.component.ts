@@ -60,6 +60,10 @@ export class ManiaChatComponent {
     this.isOpen.update(value => !value);
   }
 
+  closeChat(): void {
+    this.isOpen.set(false);
+  }
+
   async send(): Promise<void> {
     const content = this.draft().trim();
     if (!content || this.isLoading()) {

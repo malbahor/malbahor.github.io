@@ -148,11 +148,12 @@
 @media (max-width: 767px) {
   :host .mania-panel {
     position: fixed;
-    left: 0.625rem;
-    bottom: 0;
-    z-index: 50;
-    width: calc(100vw - 1.25rem);
-    max-width: 24rem;
-    max-height: 100dvh;
+    left: 16px;
+    right: 16px;
+    bottom: 16px;
+    z-index: 9999;
+    width: calc(100% - 32px);
+    max-width: none;
+    max-height: 80vh;
   }
 }

@@ -322,6 +322,39 @@ describe('ManiaChatComponent', () => {
 
     expect(scrollTopValue).toBe(400);
   });
+
+  it('should render the close button when the panel is open', () => {
+    component.toggle();
+    fixture.detectChanges();
+
+    const closeButton = fixture.debugElement.queryAll(By.css('header button')).find(
+      b => b.nativeElement.getAttribute('aria-label') === component.data().mania.closeAria
+    );
+    expect(closeButton).toBeTruthy();
+  });
+
+  it('should close the panel when the close button is clicked', () => {
+    component.toggle();
+    expect(component.isOpen()).toBe(true);
+    fixture.detectChanges();
+
+    const closeButton = fixture.debugElement.queryAll(By.css('header button')).find(
+      b => b.nativeElement.getAttribute('aria-label') === component.data().mania.closeAria
+    );
+    closeButton?.nativeElement.click();
+    fixture.detectChanges();
+
+    expect(component.isOpen()).toBe(false);
+    expect(fixture.debugElement.query(By.css('section'))).toBeFalsy();
+  });
+
+  it('should set isOpen to false when closeChat is called', () => {
+    component.toggle();
+    expect(component.isOpen()).toBe(true);
+
+    component.closeChat();
+    expect(component.isOpen()).toBe(false);
+  });
 });
 
  
